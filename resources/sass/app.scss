@@ -1,0 +1,29 @@
+// Variables
+@use "sass:meta";
+@use 'variables';
+
+// Bootstrap
+// @import 'bootstrap/scss/bootstrap';
+
+// Font-awesome icons
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+
+
+// DataTables
+@import 'bootstrap-icons/font/bootstrap-icons.css';
+// @import "datatables.net-bs5/css/dataTables.bootstrap5.min.css";
+// @import "datatables.net-buttons-bs5/css/buttons.bootstrap5.min.css";
+// @import 'datatables.net-select-bs5/css/select.bootstrap5.css';
+
+@include meta.load-css('fonts');
+// @include meta.load-css('datatable');
+
+@import 'intl-tel-input/build/css/intlTelInput.css';
+
+body {
+    font-family: 'LexendDeca-Regular', sans-serif !important;
+}
+
+.iti {
+    width: 100% !important;
+}

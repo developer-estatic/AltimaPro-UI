@@ -1,0 +1,56 @@
+@php
+$activeLabel = __('Active');
+$inactiveLabel = __('Inactive');
+@endphp
+<div>
+    <div class="flex items-center justify-between p-3 md:p-5 border-b rounded-t border-gray-200 bg-blue-100">
+        <h5 class="font-semibold text-gray-900 mb-0">
+            {{ $title }}
+        </h5>
+    </div>
+    <div class="overflow-x-auto table-responsive">
+        <table class="table table-bordered table-striped mb-0">
+            <thead class="">
+                <tr>
+                    <th scope="col" class="px-6 py-2 w-min! whitespace-nowrap">Brand</th>
+                    <th scope="col" class="px-6 py-2 w-min! whitespace-nowrap">Name</th>
+                    <th scope="col" class="px-6 py-2 w-min! whitespace-nowrap">Host</th>
+                    <th scope="col" class="px-6 py-2 w-min! whitespace-nowrap">Username</th>
+                    <th scope="col" class="px-6 py-2 w-min! whitespace-nowrap">Port</th>
+                    <th scope="col" class="px-6 py-2 w-min! whitespace-nowrap">Encryption</th>
+                    <th scope="col" class="px-6 py-2 w-min! whitespace-nowrap">From Email</th>
+                    <th scope="col" class="px-6 py-2 w-min! whitespace-nowrap">Status</th>
+
+
+                </tr>
+            </thead>
+            <tbody>
+                @forelse ($smtpDetails as $smtp)
+                <tr>
+                    <td class="px-6 py-2 text-start align-middle text-nowrap w-min">{{ $smtp?->brand?->name ?? 'N/A'
+                        }}</td>
+                    <td class="px-6 py-2 text-start align-middle">{{ $smtp->name }}</td>
+                    <td class="px-6 py-2 text-start align-middle">{{ $smtp->host }}</td>
+                    <td class="px-6 py-2 text-start align-middle">{{ $smtp->username }}</td>
+                    <td class="px-6 py-2 text-start align-middle">{{ $smtp->port }}</td>
+                    <td class="px-6 py-2 text-start align-middle">{{ $smtp->encryption }}</td>
+                    <td class="px-6 py-2 text-start align-middle">{{ $smtp->from_email }}</td>
+                    <td class="px-6 py-2 text-start align-middle">
+                        <span class="text-sm font-semibold text-gray-700">
+                            {{ $smtp->status ? $activeLabel : $inactiveLabel }}
+                        </span>
+                    </td>
+                </tr>
+                @empty
+                <tr>
+                    <td colspan="8" class="px-6 py-2 text-start align-middle">
+                        <span class="text-sm font-semibold text-gray-700">
+                            {{ __('No SMTP details found.') }}
+                        </span>
+                    </td>
+                </tr>
+                @endforelse
+            </tbody>
+        </table>
+    </div>
+</div>

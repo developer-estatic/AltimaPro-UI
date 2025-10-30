@@ -1,0 +1,1179 @@
+<section class="content border clearfix cmn-tabe cmn-newtab ml-15 mr-15">
+	 
+	<!-- tabs design -->
+	<div class="fund-top nav-tabs-custom">
+        <!-- required for floating -->
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs tabs-left">
+            <li class="active my_tab1"><a href="#worlcheckDetails" data-toggle="tab" aria-expanded="true">Worldcheck Details</a></li>
+            <li class="  my_tab2"><a href="#questionbank" data-toggle="tab" aria-expanded="false">Question Bank</a></li>
+            <li class=" my_tab3"><a href="#tickets" data-toggle="tab" aria-expanded="false">Ticket Types</a></li>
+			<li class=" my_tab4"><a href="#notification_rules" data-toggle="tab" aria-expanded="false">Notification Rule</a></li>
+			<li class=" my_tab5"><a href="#create_es_index" data-toggle="tab" aria-expanded="false">Create ES Index</a></li>
+			<li class=" my_tab6"><a href="#insert_data_in_es" data-toggle="tab" aria-expanded="false">Insert Data in ES</a></li>
+			<li class=" my_tab7"><a href="#account_types" data-toggle="tab" aria-expanded="false">Account Types</a></li>
+			<li class=" my_tab8"><a href="#trading_terms" data-toggle="tab" aria-expanded="false">Trading Terms (For Sirix)</a></li>
+        </ul>
+    </div>
+    <div class="fund-body listingpg">
+        <!-- Tab panes -->
+        <div class="tab-content border p-15">
+            <div class="tab-pane active" id="worlcheckDetails"> 
+  <style>
+  #DtBunit_info{
+    float: right!important;
+  }
+  #DtBunit tr th:first-child::after{
+    content:none!important;
+  }
+  #DtBunit tr th:first-child::before{
+    content:none!important;
+  }
+</style>
+
+<div class="">
+<div class="page-title-header clearfix d-flex align-items-center pl-0">
+    <div class="col-md-12">
+      <p class="m-0"><strong>Worldcheck Details</strong></p>
+    </div>
+    
+  </div>
+  <section class="content border clearfix">
+  <div class="border-div-wrap">
+  <div class="border clearfix pt-10 pb-10 d-flex align-items-center border-b-0">
+    <div class="col-md-4">
+    <div id="chkbdel" class="list-view-control ">
+        <div id="checked-opt-opearation" style="display: none;">
+          <li><a href="javascript:void(0);" id="new_view" class="selectedcheckbox" style="color: #515151d1;font-family: 'Lexend Deca Regular';">&nbsp;Selected&nbsp;</a></li>
+          <li><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 25 19" fill="none">
+  <g clip-path="url(#clip0_487_144)">
+    <path d="M14.9193 3.12723C14.7832 3.00046 14.6741 2.84759 14.5984 2.67774C14.5228 2.50788 14.4821 2.32453 14.4788 2.1386C14.4755 1.95268 14.5097 1.768 14.5794 1.59559C14.649 1.42317 14.7527 1.26654 14.8841 1.13506C15.0156 1.00357 15.1723 0.899912 15.3447 0.83027C15.5171 0.760628 15.7018 0.726427 15.8877 0.729707C16.0736 0.732988 16.257 0.773682 16.4268 0.849363C16.5967 0.925044 16.7495 1.03416 16.8763 1.17021L24.2613 8.5552C24.5206 8.81483 24.6663 9.16676 24.6663 9.53371C24.6663 9.90065 24.5206 10.2526 24.2613 10.5122L16.8763 17.8972C16.7495 18.0333 16.5967 18.1424 16.4268 18.2181C16.257 18.2937 16.0736 18.3344 15.8877 18.3377C15.7018 18.341 15.5171 18.3068 15.3447 18.2371C15.1723 18.1675 15.0156 18.0638 14.8841 17.9324C14.7527 17.8009 14.649 17.6442 14.5794 17.4718C14.5097 17.2994 14.4755 17.1147 14.4788 16.9288C14.4821 16.7429 14.5228 16.5595 14.5984 16.3897C14.6741 16.2198 14.7832 16.067 14.9193 15.9402L19.9411 10.9184L2.05094 10.9184C1.6837 10.9184 1.3315 10.7725 1.07182 10.5128C0.812145 10.2531 0.666259 9.90095 0.666259 9.53371C0.666259 9.16646 0.812145 8.81427 1.07182 8.55459C1.3315 8.29491 1.6837 8.14902 2.05094 8.14902L19.9411 8.14902L14.9193 3.12723Z" fill="#BDD3EB"></path>
+  </g>
+  <defs>
+    <clipPath id="clip0_487_144">
+      <rect width="19" height="25" fill="white" transform="translate(25) rotate(90)"></rect>
+    </clipPath>
+  </defs>
+</svg></li>
+
+          <li id=""><a class="hover" id="submitstatusbtn" type="button" data-target="#assign_modal1" onclick="openStatusmodal()" data-original-title="" title="">
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 58 61" fill="none">
+  <path d="M29.3461 0.627441C24.063 0.627441 19.6639 4.57501 18.9255 9.66274H8.62256C8.49432 9.64079 8.36442 9.62997 8.23432 9.63038C8.12191 9.63281 8.00983 9.64362 7.89903 9.66274H2.99314C2.69382 9.6585 2.39664 9.7138 2.11888 9.82542C1.84112 9.93703 1.58831 10.1027 1.37514 10.3129C1.16198 10.5231 0.992712 10.7735 0.877178 11.0497C0.761644 11.3258 0.702148 11.6222 0.702148 11.9216C0.702148 12.2209 0.761644 12.5173 0.877178 12.7934C0.992712 13.0696 1.16198 13.32 1.37514 13.5302C1.58831 13.7404 1.84112 13.9061 2.11888 14.0177C2.39664 14.1293 2.69382 14.1846 2.99314 14.1804H6.21373L10.0049 53.3774C10.4131 57.6039 14.0038 60.8627 18.249 60.8627H40.4402C44.6856 60.8627 48.2763 57.6043 48.6843 53.3774L52.4784 14.1804H55.699C55.9983 14.1846 56.2955 14.1293 56.5733 14.0177C56.8511 13.9061 57.1039 13.7404 57.317 13.5302C57.5302 13.32 57.6995 13.0696 57.815 12.7934C57.9305 12.5173 57.99 12.2209 57.99 11.9216C57.99 11.6222 57.9305 11.3258 57.815 11.0497C57.6995 10.7735 57.5302 10.5231 57.317 10.3129C57.1039 10.1027 56.8511 9.93703 56.5733 9.82542C56.2955 9.7138 55.9983 9.6585 55.699 9.66274H50.7961C50.5565 9.62386 50.3122 9.62386 50.0726 9.66274H39.7667C39.0283 4.57501 34.6292 0.627441 29.3461 0.627441ZM29.3461 5.14509C32.1759 5.14509 34.4974 7.05479 35.1608 9.66274H23.5314C24.1948 7.05479 26.5163 5.14509 29.3461 5.14509ZM10.749 14.1804H47.9402L44.1873 52.9422C43.999 54.8925 42.399 56.3451 40.4402 56.3451H18.249C16.293 56.3451 14.6901 54.8898 14.502 52.9422L10.749 14.1804ZM24.0402 21.6774C23.4416 21.6868 22.8713 21.9333 22.4543 22.3629C22.0374 22.7925 21.8081 23.37 21.8167 23.9686V46.5569C21.8124 46.8562 21.8677 47.1534 21.9794 47.4311C22.091 47.7089 22.2567 47.9617 22.4669 48.1749C22.677 48.388 22.9275 48.5573 23.2036 48.6728C23.4798 48.7884 23.7761 48.8478 24.0755 48.8478C24.3748 48.8478 24.6712 48.7884 24.9474 48.6728C25.2235 48.5573 25.474 48.388 25.6841 48.1749C25.8943 47.9617 26.06 47.7089 26.1716 47.4311C26.2833 47.1534 26.3386 46.8562 26.3343 46.5569V23.9686C26.3387 23.6663 26.2823 23.3662 26.1685 23.086C26.0547 22.8059 25.8858 22.5515 25.6719 22.3378C25.4579 22.1241 25.2033 21.9556 24.923 21.8422C24.6427 21.7287 24.3425 21.6727 24.0402 21.6774ZM34.5814 21.6774C33.9828 21.6868 33.4124 21.9333 32.9955 22.3629C32.5786 22.7925 32.3493 23.37 32.3579 23.9686V46.5569C32.3536 46.8562 32.4089 47.1534 32.5205 47.4311C32.6322 47.7089 32.7979 47.9617 33.008 48.1749C33.2182 48.388 33.4686 48.5573 33.7448 48.6728C34.021 48.7884 34.3173 48.8478 34.6167 48.8478C34.916 48.8478 35.2124 48.7884 35.4885 48.6728C35.7647 48.5573 36.0151 48.388 36.2253 48.1749C36.4355 47.9617 36.6012 47.7089 36.7128 47.4311C36.8244 47.1534 36.8797 46.8562 36.8755 46.5569V23.9686C36.8798 23.6663 36.8234 23.3662 36.7096 23.086C36.5959 22.8059 36.427 22.5515 36.213 22.3378C35.9991 22.1241 35.7445 21.9556 35.4642 21.8422C35.1839 21.7287 34.8837 21.6727 34.5814 21.6774Z" fill="#0076F5"></path>
+</svg>
+         <span>Delete</span> </a></li>
+        
+        </div>
+      </div>
+    </div>
+  <div class="col-md-8 resetfilter">
+       
+
+      <div class="nav-bottom comn-srch mr-5">
+        <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search" name="acc" required="" id="custsearch">
+                      <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit" id="search-btn">
+                          <i class="glyphicon glyphicon-search"></i>
+                        </button>
+                      </div>
+                    </div>
+    </div>
+
+      <div class="button-wrap">
+		    <div class="dropdown">
+			    <a href="javascript:void(0);" data-toggle="modal" data-target="#myModal" class="plus-button"><i class="fa fa-plus" aria-hidden="true"></i></a>      
+			  </div>
+      </div>
+    </div>
+    </div>
+  </div>
+    <div class="border">
+      <div class="table-responsive">
+        <div id="14" class="modal fade common-new-popup modal-hht text-centr" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog lg-modal d-inline">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title" id="myLargeModalLabel">Edit Worlcheck Details</h4>
+                </div>
+                <div class="modal-body">
+                  
+                </div>
+              </div>
+            </div>
+          </div><div id="assign_modal1" class="modal fade common-new-popup modal-hht text-centr  Assign-for" role="dialog">
+                  <div class="modal-dialog d-inline sm-modal">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="myLargeModalLabel">Delete Worlcheck</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="padding-15 clearfix">
+                          <!-- <form action="" id="submitassigned" method=""> -->
+                            <div class="clearfix">
+                              <div class="col-md-12 col-lg-12">
+                                <div class="form-group">
+                                  <label class="control-label">Are you sure you want to delete Worlcheck? </label>
+                                </div>
+                              </div>
+                              <input type="hidden" id="arrayofcheckedlead" name="arrayofcheckedlead[]">
+
+                              <span class="help-block form-error" id="assign-error"></span>
+
+                              <div class="modal-footer d-flex">
+                                <div class="formprocessgif" id="img" style="display: none;"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+                                <button class="btn btn-submit" id="submitassignedbtnall" type="submit">Yes</button>
+                                <button type="reset" class=" ml-3 btn auto-border-btn" data-dismiss="modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 17" fill="none">
+  <g clip-path="url(#clip0_311_9213)">
+    <path d="M15.3725 0.813965L13.1578 3.02867C11.5067 1.37391 9.09806 0.477881 6.4975 0.931612C3.46314 1.46168 1.00844 3.88194 0.447495 6.91102C-0.438716 11.6892 3.22304 15.8728 7.84308 15.8728C11.7087 15.8728 14.9045 12.9432 15.3254 9.18749C15.3759 8.73874 15.0243 8.34338 14.5725 8.34338C14.196 8.34338 13.872 8.62064 13.8313 8.99485C13.5053 12.0104 10.9444 14.3669 7.84308 14.3669C4.1228 14.3669 1.17967 10.9778 1.94014 7.12426C2.39793 4.8052 4.25426 2.93032 6.56955 2.4522C8.72463 2.00739 10.7284 2.73022 12.0916 4.09485L10.1019 6.08455H15.3725V0.813965Z" fill="#0058B8"></path>
+  </g>
+  <defs>
+    <clipPath id="clip0_311_9213">
+      <rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect>
+    </clipPath>
+  </defs>
+</svg>
+                                </button>
+                              </div>
+                            </div>
+                          <!-- </form> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div id="13" class="modal fade common-new-popup modal-hht text-centr" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog lg-modal d-inline">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title" id="myLargeModalLabel">Edit Worlcheck Details</h4>
+                </div>
+                <div class="modal-body">
+                  
+                </div>
+              </div>
+            </div>
+          </div><div id="assign_modal1" class="modal fade common-new-popup modal-hht text-centr  Assign-for" role="dialog">
+                  <div class="modal-dialog d-inline sm-modal">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="myLargeModalLabel">Delete Worlcheck</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="padding-15 clearfix">
+                          <!-- <form action="" id="submitassigned" method=""> -->
+                            <div class="clearfix">
+                              <div class="col-md-12 col-lg-12">
+                                <div class="form-group">
+                                  <label class="control-label">Are you sure you want to delete Worlcheck? </label>
+                                </div>
+                              </div>
+                              <input type="hidden" id="arrayofcheckedlead" name="arrayofcheckedlead[]">
+
+                              <span class="help-block form-error" id="assign-error"></span>
+
+                              <div class="modal-footer d-flex">
+                                <div class="formprocessgif" id="img" style="display: none;"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+                                <button class="btn btn-submit" id="submitassignedbtnall" type="submit">Yes</button>
+                                <button type="reset" class=" ml-3 btn auto-border-btn" data-dismiss="modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 17" fill="none">
+  <g clip-path="url(#clip0_311_9213)">
+    <path d="M15.3725 0.813965L13.1578 3.02867C11.5067 1.37391 9.09806 0.477881 6.4975 0.931612C3.46314 1.46168 1.00844 3.88194 0.447495 6.91102C-0.438716 11.6892 3.22304 15.8728 7.84308 15.8728C11.7087 15.8728 14.9045 12.9432 15.3254 9.18749C15.3759 8.73874 15.0243 8.34338 14.5725 8.34338C14.196 8.34338 13.872 8.62064 13.8313 8.99485C13.5053 12.0104 10.9444 14.3669 7.84308 14.3669C4.1228 14.3669 1.17967 10.9778 1.94014 7.12426C2.39793 4.8052 4.25426 2.93032 6.56955 2.4522C8.72463 2.00739 10.7284 2.73022 12.0916 4.09485L10.1019 6.08455H15.3725V0.813965Z" fill="#0058B8"></path>
+  </g>
+  <defs>
+    <clipPath id="clip0_311_9213">
+      <rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect>
+    </clipPath>
+  </defs>
+</svg>
+                                </button>
+                              </div>
+                            </div>
+                          <!-- </form> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div id="12" class="modal fade common-new-popup modal-hht text-centr" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog lg-modal d-inline">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title" id="myLargeModalLabel">Edit Worlcheck Details</h4>
+                </div>
+                <div class="modal-body">
+                  
+                </div>
+              </div>
+            </div>
+          </div><div id="assign_modal1" class="modal fade common-new-popup modal-hht text-centr  Assign-for" role="dialog">
+                  <div class="modal-dialog d-inline sm-modal">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="myLargeModalLabel">Delete Worlcheck</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="padding-15 clearfix">
+                          <!-- <form action="" id="submitassigned" method=""> -->
+                            <div class="clearfix">
+                              <div class="col-md-12 col-lg-12">
+                                <div class="form-group">
+                                  <label class="control-label">Are you sure you want to delete Worlcheck? </label>
+                                </div>
+                              </div>
+                              <input type="hidden" id="arrayofcheckedlead" name="arrayofcheckedlead[]">
+
+                              <span class="help-block form-error" id="assign-error"></span>
+
+                              <div class="modal-footer d-flex">
+                                <div class="formprocessgif" id="img" style="display: none;"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+                                <button class="btn btn-submit" id="submitassignedbtnall" type="submit">Yes</button>
+                                <button type="reset" class=" ml-3 btn auto-border-btn" data-dismiss="modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 17" fill="none">
+  <g clip-path="url(#clip0_311_9213)">
+    <path d="M15.3725 0.813965L13.1578 3.02867C11.5067 1.37391 9.09806 0.477881 6.4975 0.931612C3.46314 1.46168 1.00844 3.88194 0.447495 6.91102C-0.438716 11.6892 3.22304 15.8728 7.84308 15.8728C11.7087 15.8728 14.9045 12.9432 15.3254 9.18749C15.3759 8.73874 15.0243 8.34338 14.5725 8.34338C14.196 8.34338 13.872 8.62064 13.8313 8.99485C13.5053 12.0104 10.9444 14.3669 7.84308 14.3669C4.1228 14.3669 1.17967 10.9778 1.94014 7.12426C2.39793 4.8052 4.25426 2.93032 6.56955 2.4522C8.72463 2.00739 10.7284 2.73022 12.0916 4.09485L10.1019 6.08455H15.3725V0.813965Z" fill="#0058B8"></path>
+  </g>
+  <defs>
+    <clipPath id="clip0_311_9213">
+      <rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect>
+    </clipPath>
+  </defs>
+</svg>
+                                </button>
+                              </div>
+                            </div>
+                          <!-- </form> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div id="7" class="modal fade common-new-popup modal-hht text-centr" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog lg-modal d-inline">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">×</button>
+                  <h4 class="modal-title" id="myLargeModalLabel">Edit Worlcheck Details</h4>
+                </div>
+                <div class="modal-body">
+                  
+                </div>
+              </div>
+            </div>
+          </div><div id="assign_modal1" class="modal fade common-new-popup modal-hht text-centr  Assign-for" role="dialog">
+                  <div class="modal-dialog d-inline sm-modal">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title" id="myLargeModalLabel">Delete Worlcheck</h4>
+                        <button type="button" class="close" data-dismiss="modal">×</button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="padding-15 clearfix">
+                          <!-- <form action="" id="submitassigned" method=""> -->
+                            <div class="clearfix">
+                              <div class="col-md-12 col-lg-12">
+                                <div class="form-group">
+                                  <label class="control-label">Are you sure you want to delete Worlcheck? </label>
+                                </div>
+                              </div>
+                              <input type="hidden" id="arrayofcheckedlead" name="arrayofcheckedlead[]">
+
+                              <span class="help-block form-error" id="assign-error"></span>
+
+                              <div class="modal-footer d-flex">
+                                <div class="formprocessgif" id="img" style="display: none;"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+                                <button class="btn btn-submit" id="submitassignedbtnall" type="submit">Yes</button>
+                                <button type="reset" class=" ml-3 btn auto-border-btn" data-dismiss="modal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 16 17" fill="none">
+  <g clip-path="url(#clip0_311_9213)">
+    <path d="M15.3725 0.813965L13.1578 3.02867C11.5067 1.37391 9.09806 0.477881 6.4975 0.931612C3.46314 1.46168 1.00844 3.88194 0.447495 6.91102C-0.438716 11.6892 3.22304 15.8728 7.84308 15.8728C11.7087 15.8728 14.9045 12.9432 15.3254 9.18749C15.3759 8.73874 15.0243 8.34338 14.5725 8.34338C14.196 8.34338 13.872 8.62064 13.8313 8.99485C13.5053 12.0104 10.9444 14.3669 7.84308 14.3669C4.1228 14.3669 1.17967 10.9778 1.94014 7.12426C2.39793 4.8052 4.25426 2.93032 6.56955 2.4522C8.72463 2.00739 10.7284 2.73022 12.0916 4.09485L10.1019 6.08455H15.3725V0.813965Z" fill="#0058B8"></path>
+  </g>
+  <defs>
+    <clipPath id="clip0_311_9213">
+      <rect width="16" height="16" fill="white" transform="translate(0 0.5)"></rect>
+    </clipPath>
+  </defs>
+</svg>
+                                </button>
+                              </div>
+                            </div>
+                          <!-- </form> -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div><div id="DtBunit_wrapper" class="dataTables_wrapper form-inline dt-bootstrap no-footer"><table id="DtBunit" class="example23 table table-striped dataTable dt-responsive responsive nowrap no-footer border-l-0 border-r-0" role="grid" aria-describedby="DtBunit_info">
+          <thead>
+            <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="DtBunit" rowspan="1" colspan="1" aria-sort="ascending" aria-label=": activate to sort column descending" style="width: 40px;"><input type="checkbox" id="flowcheckall" onclick="handleAllcheckedoption(this)"><label for="flowcheckall"></label></th><th class="sorting" tabindex="0" aria-controls="DtBunit" rowspan="1" colspan="1" aria-label="Worlcheck Name: activate to sort column ascending" style="width: 549.891px;">Worlcheck Name</th><th class="sorting" tabindex="0" aria-controls="DtBunit" rowspan="1" colspan="1" aria-label="URL: activate to sort column ascending" style="width: 579.266px;">URL</th><th class="sorting" tabindex="0" aria-controls="DtBunit" rowspan="1" colspan="1" aria-label="Status: activate to sort column ascending" style="width: 315.844px;">Status</th></tr>
+          </thead>
+          <tbody>
+                        
+          
+                <!-- ALTCRM-1422 -->
+                
+                <!-- ALTCRM-1422 -->
+          <!-- <div id="del14" class="modal fade common-new-popup modal-hht text-centr" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-md d-inline">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title" id="myLargeModalLabel">Delete Worlcheck</h4>
+                </div>
+                <div class="modal-body p-15">
+                  <div class="">
+                    <div class="form-group text-center mb-0">
+                      <label class="control-label">Are you sure you want to delete <b> test1 </b> Worlcheck? </label>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix mt-10">
+                      <input type= "hidden" name= "language" id="language" value="en">
+                      <button type="button" class="btn btn-submit" onclick="location.href='https://staging-altima.fwscrm.com/en/admin/delete_worlcheck/14';" >Yes</button>
+                      <button class="btn btn-default" name="submit" id="demo_submit" type="submit" data-dismiss="modal" >No</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+                      
+          
+                <!-- ALTCRM-1422 -->
+                
+                <!-- ALTCRM-1422 -->
+          <!-- <div id="del13" class="modal fade common-new-popup modal-hht text-centr" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-md d-inline">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title" id="myLargeModalLabel">Delete Worlcheck</h4>
+                </div>
+                <div class="modal-body p-15">
+                  <div class="">
+                    <div class="form-group text-center mb-0">
+                      <label class="control-label">Are you sure you want to delete <b> Test </b> Worlcheck? </label>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix mt-10">
+                      <input type= "hidden" name= "language" id="language" value="en">
+                      <button type="button" class="btn btn-submit" onclick="location.href='https://staging-altima.fwscrm.com/en/admin/delete_worlcheck/13';" >Yes</button>
+                      <button class="btn btn-default" name="submit" id="demo_submit" type="submit" data-dismiss="modal" >No</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+                      
+          
+                <!-- ALTCRM-1422 -->
+                
+                <!-- ALTCRM-1422 -->
+          <!-- <div id="del12" class="modal fade common-new-popup modal-hht text-centr" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-md d-inline">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title" id="myLargeModalLabel">Delete Worlcheck</h4>
+                </div>
+                <div class="modal-body p-15">
+                  <div class="">
+                    <div class="form-group text-center mb-0">
+                      <label class="control-label">Are you sure you want to delete <b> YoManTest </b> Worlcheck? </label>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix mt-10">
+                      <input type= "hidden" name= "language" id="language" value="en">
+                      <button type="button" class="btn btn-submit" onclick="location.href='https://staging-altima.fwscrm.com/en/admin/delete_worlcheck/12';" >Yes</button>
+                      <button class="btn btn-default" name="submit" id="demo_submit" type="submit" data-dismiss="modal" >No</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+                      
+          
+                <!-- ALTCRM-1422 -->
+                
+                <!-- ALTCRM-1422 -->
+          <!-- <div id="del7" class="modal fade common-new-popup modal-hht text-centr" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+            <div class="modal-dialog modal-md d-inline">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h4 class="modal-title" id="myLargeModalLabel">Delete Worlcheck</h4>
+                </div>
+                <div class="modal-body p-15">
+                  <div class="">
+                    <div class="form-group text-center mb-0">
+                      <label class="control-label">Are you sure you want to delete <b> Testing_mb </b> Worlcheck? </label>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="clearfix mt-10">
+                      <input type= "hidden" name= "language" id="language" value="en">
+                      <button type="button" class="btn btn-submit" onclick="location.href='https://staging-altima.fwscrm.com/en/admin/delete_worlcheck/7';" >Yes</button>
+                      <button class="btn btn-default" name="submit" id="demo_submit" type="submit" data-dismiss="modal" >No</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+                      <tr role="row" class="odd" style="position: relative;">
+              <!-- <td><a class="td-link" data-id="14">1</a></td> -->
+              <td class="sorting_1"><a class="td-link" data-id="14"><input type="checkbox" id="14" name="check[]" value="14" onclick="handleClick1(this)" class="chk_boxes1"><label for="14"></label></a></td>
+
+              
+              <td><a class="td-link edit_dt" data-id="14" data-action="https://staging-altima.fwscrm.com/en/admin/loda_data_worldcheck_edit/14">test1</a></td>
+
+              <td><a class="td-link edit_dt" data-id="14" data-action="https://staging-altima.fwscrm.com/en/admin/loda_data_worldcheck_edit/14">sdfsdfs</a></td>
+
+              <td><a class="td-link">
+              <!-- Active -->
+              <div class="voipmanagment-status-dropdwn p-5">
+                <div>
+                <!-- ALTCRM - 684 -->
+                    <p id="quick_status14" onclick="handleClick(this, '14')" aria-hidden="true">Active</p>
+                </div>
+                <div>
+                    <select class="form-control quick_list confmodal14" style="display:none; " name="status" id="quick_list14" required="">
+                        <option selected="" value="1">Active</option><option value="0">Inactive</option>                    </select>
+                </div> 
+
+                <!-- ALTCRM-1395 -->
+                <script>
+											function handleClick(element, id) {
+												// Call the existing functionality
+                        quickeditcode(element, id, 'quick_list', 'quick_status', 'check_button', 'quick_reload');
+												
+												// Hide the pencil icon
+												var pencilIcon = document.querySelector('#quick_drop' + id);
+												if (pencilIcon) {
+													pencilIcon.style.display = 'none';
+												}
+											}
+
+											$(document).ready(function() {
+												// Add event listener to the select element
+												$('.confmodal14').click(function() {
+													// Get the initial selected value from the paragraph
+													var initialValue = $(this).closest(".voipmanagment-status-dropdwn").find("p").text().trim();
+													var initialSelectedValue = (initialValue === "Active") ? "1" : "0";
+													// alert(initialSelectedValue);
+
+													// Get the currently selected value of the dropdown
+													var selectedValue = $(this).val();
+													// alert(selectedValue);
+
+													// Compare the initial and current values
+													if (selectedValue !== initialSelectedValue) {
+														$('#changestatus14').modal('show');
+													}
+												});
+											});
+										</script>
+
+                    
+                    <div id="changestatus14" class="modal fade common-new-popup modal-hht text-centr changeWorldCheckModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+											<div class="modal-dialog modal-sm d-inline">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">×</button>
+														<h4 class="modal-title" id="myLargeModalLabel">Change Status</h4>
+													</div>
+													<div class="modal-body">
+														<div class="p-10 pb-15 clearfix">
+															<div class="form-group">
+																<div class="col-lg-12">
+																	<label class="control-label" style="color:#195A97;font-weight:800;font-family: 'lexend deca regular'">Do you really want to change The Status?</label>
+																</div>	
+															</div>	
+
+															<div class="col-md-12 col-lg-12">
+																<div class="form-group mb-0 mt-10 d-flex">
+																	<div class="formprocessgif" id="img" style="display: none;"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+																	<button type="submit" class="btn btn-submit" onclick="savedit(this,'14','quick_list','quick_status','check_button','worlcheckDetails','status','id','WorldCheckDetails')" data-dismiss="modal">Yes</button>
+																	<button class="btn btn-default ml-3" data-dismiss="modal">No</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+                    <!-- ALTCRM-1395 -->
+
+                <div class="fa-color">
+                    <i class="fa fa-pencil" onclick="quickeditcode(this,'14','quick_list','quick_status','check_button','quick_reload')" aria-hidden="true" id="quick_drop14"></i> 
+                    <!-- <i class="fa fa-check-circle text-success" onclick="savedit(this,'14','quick_list','quick_status','check_button','worlcheckDetails','status','id','WorldCheckDetails')" aria-hidden="true" style="display:none"; id="check_button14"></i>
+                    <i class="fa fa-times-circle text-danger" onclick="reloadcode(this,'14','quick_list','quick_status','check_button','quick_reload')"  style="display:none"; aria-hidden="true" id="quick_reload14"></i> -->
+                </div>
+            </div>                 
+              </a></td>
+              <!-- <td><a class="btn btn-warning" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i></a>&nbsp;
+
+              <a class="btn btn-danger"  data-toggle="modal" data-target="#del" ><i class="fa fa-trash"></i></a></td> -->
+            </tr><tr role="row" class="even" style="position: relative;">
+              <!-- <td><a class="td-link" data-id="13">2</a></td> -->
+              <td class="sorting_1"><a class="td-link" data-id="13"><input type="checkbox" id="13" name="check[]" value="13" onclick="handleClick1(this)" class="chk_boxes1"><label for="13"></label></a></td>
+
+              
+              <td><a class="td-link edit_dt" data-id="13" data-action="https://staging-altima.fwscrm.com/en/admin/loda_data_worldcheck_edit/13">Test</a></td>
+
+              <td><a class="td-link edit_dt" data-id="13" data-action="https://staging-altima.fwscrm.com/en/admin/loda_data_worldcheck_edit/13">test.com</a></td>
+
+              <td><a class="td-link">
+              <!-- Disabled -->
+              <div class="voipmanagment-status-dropdwn p-5">
+                <div>
+                <!-- ALTCRM - 684 -->
+                    <p id="quick_status13" onclick="handleClick(this, '13')" aria-hidden="true">Inactive</p>
+                </div>
+                <div>
+                    <select class="form-control quick_list confmodal13" style="display:none; " name="status" id="quick_list13" required="">
+                        <option value="1">Active</option><option selected="" value="0">Inactive</option>                    </select>
+                </div> 
+
+                <!-- ALTCRM-1395 -->
+                <script>
+											function handleClick(element, id) {
+												// Call the existing functionality
+                        quickeditcode(element, id, 'quick_list', 'quick_status', 'check_button', 'quick_reload');
+												
+												// Hide the pencil icon
+												var pencilIcon = document.querySelector('#quick_drop' + id);
+												if (pencilIcon) {
+													pencilIcon.style.display = 'none';
+												}
+											}
+
+											$(document).ready(function() {
+												// Add event listener to the select element
+												$('.confmodal13').click(function() {
+													// Get the initial selected value from the paragraph
+													var initialValue = $(this).closest(".voipmanagment-status-dropdwn").find("p").text().trim();
+													var initialSelectedValue = (initialValue === "Active") ? "1" : "0";
+													// alert(initialSelectedValue);
+
+													// Get the currently selected value of the dropdown
+													var selectedValue = $(this).val();
+													// alert(selectedValue);
+
+													// Compare the initial and current values
+													if (selectedValue !== initialSelectedValue) {
+														$('#changestatus13').modal('show');
+													}
+												});
+											});
+										</script>
+
+                    
+                    <div id="changestatus13" class="modal fade common-new-popup modal-hht text-centr changeWorldCheckModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+											<div class="modal-dialog modal-sm d-inline">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">×</button>
+														<h4 class="modal-title" id="myLargeModalLabel">Change Status</h4>
+													</div>
+													<div class="modal-body">
+														<div class="p-10 pb-15 clearfix">
+															<div class="form-group">
+																<div class="col-lg-12">
+																	<label class="control-label" style="color:#195A97;font-weight:800;font-family: 'lexend deca regular'">Do you really want to change The Status?</label>
+																</div>	
+															</div>	
+
+															<div class="col-md-12 col-lg-12">
+																<div class="form-group mb-0 mt-10 d-flex">
+																	<div class="formprocessgif" id="img" style="display: none;"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+																	<button type="submit" class="btn btn-submit" onclick="savedit(this,'13','quick_list','quick_status','check_button','worlcheckDetails','status','id','WorldCheckDetails')" data-dismiss="modal">Yes</button>
+																	<button class="btn btn-default ml-3" data-dismiss="modal">No</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+                    <!-- ALTCRM-1395 -->
+
+                <div class="fa-color">
+                    <i class="fa fa-pencil" onclick="quickeditcode(this,'13','quick_list','quick_status','check_button','quick_reload')" aria-hidden="true" id="quick_drop13"></i> 
+                    <!-- <i class="fa fa-check-circle text-success" onclick="savedit(this,'13','quick_list','quick_status','check_button','worlcheckDetails','status','id','WorldCheckDetails')" aria-hidden="true" style="display:none"; id="check_button13"></i>
+                    <i class="fa fa-times-circle text-danger" onclick="reloadcode(this,'13','quick_list','quick_status','check_button','quick_reload')"  style="display:none"; aria-hidden="true" id="quick_reload13"></i> -->
+                </div>
+            </div>                 
+              </a></td>
+              <!-- <td><a class="btn btn-warning" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i></a>&nbsp;
+
+              <a class="btn btn-danger"  data-toggle="modal" data-target="#del" ><i class="fa fa-trash"></i></a></td> -->
+            </tr><tr role="row" class="odd" style="position: relative;">
+              <!-- <td><a class="td-link" data-id="12">3</a></td> -->
+              <td class="sorting_1"><a class="td-link" data-id="12"><input type="checkbox" id="12" name="check[]" value="12" onclick="handleClick1(this)" class="chk_boxes1"><label for="12"></label></a></td>
+
+              
+              <td><a class="td-link edit_dt" data-id="12" data-action="https://staging-altima.fwscrm.com/en/admin/loda_data_worldcheck_edit/12">YoManTest</a></td>
+
+              <td><a class="td-link edit_dt" data-id="12" data-action="https://staging-altima.fwscrm.com/en/admin/loda_data_worldcheck_edit/12">yoman.test</a></td>
+
+              <td><a class="td-link">
+              <!-- Disabled -->
+              <div class="voipmanagment-status-dropdwn p-5">
+                <div>
+                <!-- ALTCRM - 684 -->
+                    <p id="quick_status12" onclick="handleClick(this, '12')" aria-hidden="true">Inactive</p>
+                </div>
+                <div>
+                    <select class="form-control quick_list confmodal12" style="display:none; " name="status" id="quick_list12" required="">
+                        <option value="1">Active</option><option selected="" value="0">Inactive</option>                    </select>
+                </div> 
+
+                <!-- ALTCRM-1395 -->
+                <script>
+											function handleClick(element, id) {
+												// Call the existing functionality
+                        quickeditcode(element, id, 'quick_list', 'quick_status', 'check_button', 'quick_reload');
+												
+												// Hide the pencil icon
+												var pencilIcon = document.querySelector('#quick_drop' + id);
+												if (pencilIcon) {
+													pencilIcon.style.display = 'none';
+												}
+											}
+
+											$(document).ready(function() {
+												// Add event listener to the select element
+												$('.confmodal12').click(function() {
+													// Get the initial selected value from the paragraph
+													var initialValue = $(this).closest(".voipmanagment-status-dropdwn").find("p").text().trim();
+													var initialSelectedValue = (initialValue === "Active") ? "1" : "0";
+													// alert(initialSelectedValue);
+
+													// Get the currently selected value of the dropdown
+													var selectedValue = $(this).val();
+													// alert(selectedValue);
+
+													// Compare the initial and current values
+													if (selectedValue !== initialSelectedValue) {
+														$('#changestatus12').modal('show');
+													}
+												});
+											});
+										</script>
+
+                    
+                    <div id="changestatus12" class="modal fade common-new-popup modal-hht text-centr changeWorldCheckModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+											<div class="modal-dialog modal-sm d-inline">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">×</button>
+														<h4 class="modal-title" id="myLargeModalLabel">Change Status</h4>
+													</div>
+													<div class="modal-body">
+														<div class="p-10 pb-15 clearfix">
+															<div class="form-group">
+																<div class="col-lg-12">
+																	<label class="control-label" style="color:#195A97;font-weight:800;font-family: 'lexend deca regular'">Do you really want to change The Status?</label>
+																</div>	
+															</div>	
+
+															<div class="col-md-12 col-lg-12">
+																<div class="form-group mb-0 mt-10 d-flex">
+																	<div class="formprocessgif" id="img" style="display: none;"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+																	<button type="submit" class="btn btn-submit" onclick="savedit(this,'12','quick_list','quick_status','check_button','worlcheckDetails','status','id','WorldCheckDetails')" data-dismiss="modal">Yes</button>
+																	<button class="btn btn-default ml-3" data-dismiss="modal">No</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+                    <!-- ALTCRM-1395 -->
+
+                <div class="fa-color">
+                    <i class="fa fa-pencil" onclick="quickeditcode(this,'12','quick_list','quick_status','check_button','quick_reload')" aria-hidden="true" id="quick_drop12"></i> 
+                    <!-- <i class="fa fa-check-circle text-success" onclick="savedit(this,'12','quick_list','quick_status','check_button','worlcheckDetails','status','id','WorldCheckDetails')" aria-hidden="true" style="display:none"; id="check_button12"></i>
+                    <i class="fa fa-times-circle text-danger" onclick="reloadcode(this,'12','quick_list','quick_status','check_button','quick_reload')"  style="display:none"; aria-hidden="true" id="quick_reload12"></i> -->
+                </div>
+            </div>                 
+              </a></td>
+              <!-- <td><a class="btn btn-warning" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i></a>&nbsp;
+
+              <a class="btn btn-danger"  data-toggle="modal" data-target="#del" ><i class="fa fa-trash"></i></a></td> -->
+            </tr><tr role="row" class="even">
+              <!-- <td><a class="td-link" data-id="7">4</a></td> -->
+              <td class="sorting_1"><a class="td-link" data-id="7"><input type="checkbox" id="7" name="check[]" value="7" onclick="handleClick1(this)" class="chk_boxes1"><label for="7"></label></a></td>
+
+              
+              <td><a class="td-link edit_dt" data-id="7" data-action="https://staging-altima.fwscrm.com/en/admin/loda_data_worldcheck_edit/7">Testing_mb</a></td>
+
+              <td><a class="td-link edit_dt" data-id="7" data-action="https://staging-altima.fwscrm.com/en/admin/loda_data_worldcheck_edit/7">https://testing_mb.com</a></td>
+
+              <td><a class="td-link">
+              <!-- Active -->
+              <div class="voipmanagment-status-dropdwn p-5">
+                <div>
+                <!-- ALTCRM - 684 -->
+                    <p id="quick_status7" onclick="handleClick(this, '7')" aria-hidden="true">Active</p>
+                </div>
+                <div>
+                    <select class="form-control quick_list confmodal7" style="display:none; " name="status" id="quick_list7" required="">
+                        <option selected="" value="1">Active</option><option value="0">Inactive</option>                    </select>
+                </div> 
+
+                <!-- ALTCRM-1395 -->
+                <script>
+											function handleClick(element, id) {
+												// Call the existing functionality
+                        quickeditcode(element, id, 'quick_list', 'quick_status', 'check_button', 'quick_reload');
+												
+												// Hide the pencil icon
+												var pencilIcon = document.querySelector('#quick_drop' + id);
+												if (pencilIcon) {
+													pencilIcon.style.display = 'none';
+												}
+											}
+
+											$(document).ready(function() {
+												// Add event listener to the select element
+												$('.confmodal7').click(function() {
+													// Get the initial selected value from the paragraph
+													var initialValue = $(this).closest(".voipmanagment-status-dropdwn").find("p").text().trim();
+													var initialSelectedValue = (initialValue === "Active") ? "1" : "0";
+													// alert(initialSelectedValue);
+
+													// Get the currently selected value of the dropdown
+													var selectedValue = $(this).val();
+													// alert(selectedValue);
+
+													// Compare the initial and current values
+													if (selectedValue !== initialSelectedValue) {
+														$('#changestatus7').modal('show');
+													}
+												});
+											});
+										</script>
+
+                    
+                    <div id="changestatus7" class="modal fade common-new-popup modal-hht text-centr changeWorldCheckModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+											<div class="modal-dialog modal-sm d-inline">
+												<div class="modal-content">
+													<div class="modal-header">
+														<button type="button" class="close" data-dismiss="modal">×</button>
+														<h4 class="modal-title" id="myLargeModalLabel">Change Status</h4>
+													</div>
+													<div class="modal-body">
+														<div class="p-10 pb-15 clearfix">
+															<div class="form-group">
+																<div class="col-lg-12">
+																	<label class="control-label" style="color:#195A97;font-weight:800;font-family: 'lexend deca regular'">Do you really want to change The Status?</label>
+																</div>	
+															</div>	
+
+															<div class="col-md-12 col-lg-12">
+																<div class="form-group mb-0 mt-10 d-flex">
+																	<div class="formprocessgif" id="img" style="display: none;"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+																	<button type="submit" class="btn btn-submit" onclick="savedit(this,'7','quick_list','quick_status','check_button','worlcheckDetails','status','id','WorldCheckDetails')" data-dismiss="modal">Yes</button>
+																	<button class="btn btn-default ml-3" data-dismiss="modal">No</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+                    <!-- ALTCRM-1395 -->
+
+                <div class="fa-color">
+                    <i class="fa fa-pencil" onclick="quickeditcode(this,'7','quick_list','quick_status','check_button','quick_reload')" aria-hidden="true" id="quick_drop7"></i> 
+                    <!-- <i class="fa fa-check-circle text-success" onclick="savedit(this,'7','quick_list','quick_status','check_button','worlcheckDetails','status','id','WorldCheckDetails')" aria-hidden="true" style="display:none"; id="check_button7"></i>
+                    <i class="fa fa-times-circle text-danger" onclick="reloadcode(this,'7','quick_list','quick_status','check_button','quick_reload')"  style="display:none"; aria-hidden="true" id="quick_reload7"></i> -->
+                </div>
+            </div>                 
+              </a></td>
+              <!-- <td><a class="btn btn-warning" data-toggle="modal" data-target="#"><i class="fa fa-edit"></i></a>&nbsp;
+
+              <a class="btn btn-danger"  data-toggle="modal" data-target="#del" ><i class="fa fa-trash"></i></a></td> -->
+            </tr></tbody>
+          
+        </table></div>
+      </div>
+      <div class="table-footer">
+            <div class="table-footer-left">
+            <div id="pagination_dummy_div" class="pagination_dummy_div">
+                <!-- This is for pagination dummy div -->
+            <div class="dataTables_paginate paging_simple_numbers" id="DtBunit_paginate"><ul class="pagination"><li class="paginate_button previous disabled" id="DtBunit_previous"><a href="#" aria-controls="DtBunit" data-dt-idx="0" tabindex="0">Previous</a></li><li class="paginate_button active"><a href="#" aria-controls="DtBunit" data-dt-idx="1" tabindex="0">1</a></li><li class="paginate_button next disabled" id="DtBunit_next"><a href="#" aria-controls="DtBunit" data-dt-idx="2" tabindex="0">Next</a></li></ul></div></div>
+                <div class="ml-15 marketing-campaign">
+                    <div class="dataTables_length_new">
+                        <label class="m-0">Show                            <select id="length_change" class="form-control input-sm">
+                                <option value="10">10</option>
+                                <option selected="" value="20">20</option>
+                                <option value="40">40</option>
+                                <option value="60">60</option>
+                                <option value="100">100</option>
+                                <option value="200">200</option>
+                                <option value="500">500</option>
+                                <option value="-1">All</option>
+                            </select>
+                            entries</label>
+                </div>
+                </div>
+                </div>
+                <div id="pagination_dummy_div2" class="pagination_dummy_div2">
+                    <!-- This is for pagination dummy div -->
+                <div class="dataTables_info" id="DtBunit_info" role="status" aria-live="polite">Showing 1 to 4 of 4 entries</div></div>
+            </div>
+    </div>
+  </section>
+</div>
+<div id="myModal" class="modal fade common-new-popup modal-hht text-centr" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog lg-modal d-inline">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h4 class="modal-title" id="myLargeModalLabel">Add Worldcheck</h4>
+      </div>
+      <div class="modal-body">
+        <div class="clearfix" id="addbu_successmsg"></div>
+        <form action="https://staging-altima.fwscrm.com/en/admin/add_worlcheck" id="addbu_form" method="post">
+                    <div class="form-body form-body-approved-pending">
+            <div class="padding-15">
+              <div class="col-md-12 text-right">
+                <h6 class="text-red impfiled">All * Fields are mandatory.</h6>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="form-group">
+                            <label class="control-label">Worlcheck Name<span class="impfiled">*</span></label>
+                            <input name="wc_name" type="text" class="form-control" id="wc_name" value="" required="">
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="form-group">
+                            <label class="control-label">URL<span class="impfiled">*</span></label>
+                            <input name="wc_api_url" type="text" class="form-control" id="wc_api_url" value="" required="">
+                          </div>
+                        </div>
+						
+						 <div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="form-group">
+                            <label class="control-label">Worlcheck key<span class="impfiled">*</span></label>
+                            <input name="key" type="text" class="form-control" id="key" value="" required="">
+                          </div>
+                        </div>
+						
+						<div class="col-lg-6 col-md-6 col-sm-12">
+                          <div class="form-group">
+                            <label class="control-label">Worlcheck Secret<span class="impfiled">*</span></label>
+                            <input name="secret" type="text" class="form-control" id="secret" value="" required="">
+                          </div>
+                        </div>
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form-group ">
+                  <label class="control-label">Status</label>
+                  <select class="form-control select" name="status" id="status" required="">
+                    <option value="" selected="">Select</option>
+                    <option value="1">Active</option>
+                    <option value="0">Disabled</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="form-group ">
+                  <label class="control-label">Organization Name</label>
+                  <select class="form-control" name="org_guid" id="org_guid">
+                          <option value="" selected="">Select</option>
+                                                        <option value="ORGb6bfd24e-e737-4592-8f1f-80dab66da2b3">Intivion</option>
+                                                            <option value="ORG6546e720-b8fd-4e34-bfeb-918274862a06">Altima</option>
+                                                            <option value="ORGe0fabc2f-d870-46df-9189-934a6d371734">Test</option>
+                                                            <option value="ORGe527f913-8142-46c9-a3dd-c9da3ebb0769">DeltaFX</option>
+                                                            <option value="ORG95c0080e-a8b2-427b-b910-7dc204a86641">YoMan Test</option>
+                                                            <option value="ORG9f158291-519c-4b48-9962-65be844126ee">Testing</option>
+                                                            <option value="ORG25e72f29-b5f4-406a-b4fe-76fc906adb4a">test</option>
+                                                            <option value="ORG8117a28a-17b5-4aaf-b1f8-35bf96d2d6f6">TEST</option>
+                                                            <option value="ORGb1373643-a6e7-422b-9041-0ca18757f80f">Yo</option>
+                                                            <option value="ORG1b705714-ab26-4acf-a867-43118b4572e6">test</option>
+                                                            <option value="ORGcc0cdfdf0b62-fd30-4cb5-b52a-f6d2480e08ea">dsfas</option>
+                                                            <option value="ORGfe6279ef-67f1-4c8f-bb71-963601b4e2b4">ts</option>
+                                                            <option value="ORG4fd14420-e783-4994-847f-83007dcd4cfa">Forexpro</option>
+                                                            <option value="ORG7b725b8c-8830-40a1-b458-7aaec5f3abb6">TOTQA</option>
+                                                            <option value="ORGdad51eb7-3787-40ad-a36c-22d714f7b7b9">CXM</option>
+                                                            <option value="31">test-bran-mb</option>
+                                                            <option value="32">JBrand</option>
+                                                            <option value="33">IntivionReact</option>
+                                                          
+                          </select>
+                </div>
+              </div>
+
+              
+              
+              <div class="clearfix"></div>
+              <div class="modal-form-footer clearfix">
+                <input type="hidden" name="language" id="language" value="en">
+                <button class="btn btn-submit" id="bu_submit" type="submit" name="submit">Add</button>
+                <div class="formprocessgif" id="img" style="display: none;"><i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i></div>
+                <button class="btn btn-default" type="button" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </form>
+        
+      </div>
+    </div>
+  </div>
+</div>
+<span class="leads_btns" id="leads_btns" style="display: block; margin: -69px 0px 0px; z-index: 100; position: absolute; top: 359px;">
+
+<!-- <button id="edit_dt" title="Details" class="edit_row"  data-toggle="modal"><a href="javascript:void(0);"><span class="new-icon edit-user"></span></a></button>
+<button id="delete_dt" title="Delete" class="delete_row delete_record"  data-toggle="modal"><span class="new-icon cb-user-delet"></span></button> -->
+</span>
+<script>
+var modalOpendId;
+$(document).ready(function(){  
+	 var lang = 'en';
+   var table = $('#DtBunit').DataTable({
+responsive  : true,
+	ordering    : true,
+    seraching:false,
+	// columnDefs: [
+    //    { orderable: "false",
+	// 	 type: "date-uk",
+	// 	 targets: "sort-date",
+	// 	}
+	//  ],
+	//  "paging": true,
+	//  "pageLength": 20,
+    //  "lengthMenu": [[20, 40, 60, -1], [20, 40, 60, "All"]],
+    bLengthChange: false,
+     dom: 'lrtip',
+     buttons: [],
+  rowCallback: function (
+                row,
+                data,
+                displayNum,
+                displayIndex,
+                dataIndex
+            ) {
+				$(row).mouseover(function () {
+                    showBtns($(this));
+                });
+			},
+      drawCallback: function (settings) {
+          $("#DtBunit_paginate").detach().appendTo("#pagination_dummy_div");
+          $("#DtBunit_info").detach().appendTo("#pagination_dummy_div2");
+          $("#length_change").val(this.api().page.info().length);
+      },
+	 });
+  //  $(document).on("click", "#edit_dt", function () {
+  //       var dataid = $(this).attr("data-id");
+  //       var dataaction = $(this).attr("data-action");
+  //       // $("#"+dataid+" .modal-body").load(dataaction);
+  //       // $("#"+dataid).modal("show");
+  //       // ALTCRM-223
+  //       $.ajax({
+  //         type: "POST",
+  //         url: dataaction,
+  //         success: function (html) {
+  //           $("#"+dataid+" .modal-body").html(html);
+  //           $("#"+dataid).modal('show');
+  //         },
+  //       });
+  //       // end ALTCRM-223
+  //   });
+    $(document).on("click", ".edit_dt", function() {
+      var dataid = $(this).attr("data-id");
+      var dataaction = $(this).attr("data-action");
+      // $("#"+dataid+" .modal-body").load(dataaction);
+      // $("#"+dataid).modal("show");
+      // ALTCRM-223
+      $.ajax({
+        type: "POST",
+        url: dataaction,
+        success: function(html) {
+          $("#" + dataid + " .modal-body").html(html);
+          $("#" + dataid).modal('show');
+        },
+      });
+      // end ALTCRM-223
+    });
+
+    $("#custsearch").on("keyup", function () {
+            table.search(this.value).draw();
+        });
+        
+  });
+
+
+
+  function showBtns(row) {
+      $(row).css("position", "relative");
+      var dlt_btn = $("#leads_btns").find("button#delete_dt");
+      // var dlt_btn = $("#chkbdel").find("a#delete_dt");
+      var edt_btn = $("#leads_btns").find("button#edit_dt");
+      dlt_btn.attr("data-target", "");
+      edt_btn.attr("data-target", "");
+      $("#leads_btns").css({
+          "z-index": "100",
+          display: "block",
+          position: "absolute",
+          top: parseInt($(row).offset().top-55) + "px",
+      });
+      var dataid = row
+          .find("td:eq(0)")
+          .find("a")
+          .data("id");
+      var url = base_url+ lang + "/admin/loda_data_worldcheck_edit/"+dataid;
+    var deletemodal = "#del"+dataid;
+      dlt_btn.attr("data-target", deletemodal);
+      edt_btn.attr("data-action", url);
+      edt_btn.attr("data-id", dataid);
+
+      // console.log(dataid);
+  }
+
+  $(".lead-search button").click(function(){
+     $(".lead-search .form-control").toggleClass("input-collapsed2");
+  });
+
+  // ALTCRM-1422
+  $(function() {
+    $("#flowcheckall").click(function() {
+      // alert("hello");
+
+      $(".chk_boxes1").prop("checked", this.checked);
+    });
+  });
+
+  $('#tooltipdelete a').tooltip({
+    title: "Delete",
+    placement: "top",
+    container: 'body',
+    template: '<div class="tooltip" role="tooltip"><div class="tooltip-arrow"></div><div class="tooltip-inner"></div></div>',
+  });
+
+  function handleClick1(e) {
+    if ($(e).is(":checked")) {
+      checkboxvalue_array = $('[name="check[]"]:checked').length;
+      $(e).parent().parent().parent().addClass("active-account");
+    } else {
+      checkboxvalue_array = $('[name="check[]"]:checked').length;
+      $(e).parent().parent().parent().removeClass("active-account");
+    }
+    checkedoptOperation(checkboxvalue_array);
+  }
+
+  var checkboxvalue_array;
+  function handleAllcheckedoption(e) {
+    if ($(e).is(":checked")) {
+      checkboxvalue_array = $('[name="check[]"]:checked').length;
+      checkedoptOperation("All");
+
+    } else {
+      checkboxvalue_array = $('[name="check[]"]:checked').length;
+      checkedoptOperation(0);
+    }
+  }
+
+  checkedoptOperation();
+  function openStatusmodal(e) {
+      var returnvar = true;
+      var lengthcount = $('[name="check[]"]:checked').length;
+      // alert(lengthcount);
+      
+      if ($('input.chk_boxes1:checked').length === 0) {
+          returnvar = false;
+          $(".alertpopup").show();
+      } else {
+          $('#nofrecords').html($('input.chk_boxes1:checked').length)
+          
+          $("#assign_modal1").modal("show");
+      }
+  }
+  $("#submitassignedbtnall").click(function () {
+      var returnvar = true;
+      var lengthcount = $('[name="check[]"]:checked').length;
+      if ($("input[class=chk_boxes1]:checked").length == 0) {
+          returnvar = false;
+          $(".alertpopup").show();
+      } else {
+          var checkedlead = $('input[name="check[]"]');
+          var checkedleadselected = [];
+          $('[name="check[]"]:checked').each(function (checkedlead) {
+              checkedleadselected.push($(this).val());
+          });
+          $("#arrayofcheckedlead").val(checkedleadselected);
+          console.log(checkedleadselected);
+
+          $.ajax({
+            type: "POST",
+            url: base_url + lang + "/admin/delete_worlcheck/",
+            data: {
+                "checkedleadselected": checkedleadselected,
+            },
+            success: function(html) {
+                // alert(html);
+                window.location.reload();
+
+            },
+        });
+          
+      }
+
+      return returnvar;
+  });
+
+  function checkedoptOperation(count) {
+    if (count > 0 || count === "All") {
+      if(count === 'All'){
+        count ='All' ;
+      }
+      $("#list-view-control-id").hide();
+      $("#checked-opt-opearation").show();
+      $(".selectedcheckbox").text(`Selected ${count} WorldCheck Details${count === 1 ? '' :''}`);
+    } else {
+      $("#checked-opt-opearation").hide();
+      $("#list-view-control-id").show();
+    }
+  }
+
+  $('.changeWorldCheckModal').on('hidden.bs.modal', function () {
+  $(`#quick_list${modalOpendId}`).hide()
+  $(`#quick_status${modalOpendId}`).show()
+  $(`#quick_drop${modalOpendId}`).show()
+})
+</script></div>
+
+            <div class="tab-pane " id="questionbank"></div>
+
+            <div class="tab-pane " id="tickets"></div>
+
+			<div class="tab-pane " id="notification_rules"></div>
+
+			<div class="tab-pane checkbox-right-ar " id="create_es_index"></div>
+
+			<div class="tab-pane " id="insert_data_in_es"></div>
+
+			<div class="tab-pane " id="account_types"></div>
+
+			<div class="tab-pane " id="trading_terms"></div>
+
+        </div>
+    </div>
+</section>

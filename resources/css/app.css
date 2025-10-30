@@ -1,0 +1,196 @@
+@import 'tailwindcss';
+@import '../../vendor/livewire/flux/dist/flux.css';
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../../node_modules/flowbite";
+@plugin "@iconify/tailwind4";
+@import 'notyf/notyf.min.css';
+
+@source '../views';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../vendor/livewire/flux-pro/stubs/**/*.blade.php';
+@source '../../vendor/livewire/flux/stubs/**/*.blade.php';
+
+@custom-variant dark (&:where());
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-zinc-50: #fafafa;
+    --color-zinc-100: #f5f5f5;
+    --color-zinc-200: #e5e5e5;
+    --color-zinc-300: #d4d4d4;
+    --color-zinc-400: #a3a3a3;
+    --color-zinc-500: #737373;
+    --color-zinc-600: #525252;
+    --color-zinc-700: #404040;
+    --color-zinc-800: #262626;
+    --color-zinc-900: #171717;
+    --color-zinc-950: #0a0a0a;
+
+    --color-accent: var(--color-neutral-800);
+    --color-accent-content: var(--color-neutral-800);
+    --color-accent-foreground: var(--color-white);
+    --color-black: #000000;
+
+    --color-lochinvar: #009691;
+    --color-lochinvar-50: #effefc;
+    --color-lochinvar-100: #c7fff7;
+    --color-lochinvar-200: #90ffef;
+    --color-lochinvar-300: #51f7e6;
+    --color-lochinvar-400: #1de4d6;
+    --color-lochinvar-500: #04c8bd;
+    --color-lochinvar-600: #009691;
+    --color-lochinvar-700: #05807d;
+    --color-lochinvar-800: #0a6564;
+    --color-lochinvar-900: #0d5453;
+    --color-lochinvar-950: #003133;
+
+    --color-endeavour: #015a9b;
+    --color-endeavour-50: #f0f8ff;
+    --color-endeavour-100: #e0f0fe;
+    --color-endeavour-200: #b9e1fe;
+    --color-endeavour-300: #7bcbfe;
+    --color-endeavour-400: #36b1fa;
+    --color-endeavour-500: #0b97ec;
+    --color-endeavour-600: #0077c9;
+    --color-endeavour-700: #015a9b;
+    --color-endeavour-800: #055087;
+    --color-endeavour-900: #0b436f;
+    --color-endeavour-950: #072a4a;
+
+    --color-pattens-blue: #d7f0ff;
+    --color-pattens-blue-50: #eff9ff;
+    --color-pattens-blue-100: #d7f0ff;
+    --color-pattens-blue-200: #b8e9ff;
+    --color-pattens-blue-300: #79d7ff;
+    --color-pattens-blue-400: #32c4fe;
+    --color-pattens-blue-500: #07aef0;
+    --color-pattens-blue-600: #008bce;
+    --color-pattens-blue-700: #006fa6;
+    --color-pattens-blue-800: #035d89;
+    --color-pattens-blue-900: #094e71;
+    --color-pattens-blue-950: #06314b;
+
+    --color-matisse: #30659a;
+    --color-matisse-50: #f3f7fc;
+    --color-matisse-100: #e7eef7;
+    --color-matisse-200: #cadbed;
+    --color-matisse-300: #9bbede;
+    --color-matisse-400: #659ccb;
+    --color-matisse-500: #417fb6;
+    --color-matisse-600: #30659a;
+    --color-matisse-700: #28517c;
+    --color-matisse-800: #244568;
+    --color-matisse-900: #233c57;
+    --color-matisse-950: #17263a;
+
+
+    --color-midnight-blue: #003a7c;
+    --color-midnight-blue-50: #e9faff;
+    --color-midnight-blue-100: #cef4ff;
+    --color-midnight-blue-200: #a7edff;
+    --color-midnight-blue-300: #6be6ff;
+    --color-midnight-blue-400: #26d3ff;
+    --color-midnight-blue-500: #00aeff;
+    --color-midnight-blue-600: #0084ff;
+    --color-midnight-blue-700: #0069ff;
+    --color-midnight-blue-800: #005ae6;
+    --color-midnight-blue-900: #0051b3;
+    --color-midnight-blue-950: #003a7c;
+
+
+    --color-solitude: #e8f5ff;
+    --color-solitude-50: #e8f5ff;
+    --color-solitude-100: #e0f1fe;
+    --color-solitude-200: #bae4fd;
+    --color-solitude-300: #7dcffc;
+    --color-solitude-400: #38b6f8;
+    --color-solitude-500: #0e9de9;
+    --color-solitude-600: #027dc7;
+    --color-solitude-700: #0364a1;
+    --color-solitude-800: #075585;
+    --color-solitude-900: #0c476e;
+    --color-solitude-950: #082d49;
+
+
+    --color-picton-blue: #3fa7f0;
+    --color-picton-blue-50: #f1f8fe;
+    --color-picton-blue-100: #e1effd;
+    --color-picton-blue-200: #bddffa;
+    --color-picton-blue-300: #82c5f7;
+    --color-picton-blue-400: #3fa7f0;
+    --color-picton-blue-500: #178de0;
+    --color-picton-blue-600: #0a6ebf;
+    --color-picton-blue-700: #0a589a;
+    --color-picton-blue-800: #0c4b80;
+    --color-picton-blue-900: #10406a;
+    --color-picton-blue-950: #0b2846;
+
+
+    --color-steel-blue: #4477a7;
+    --color-steel-blue-50: #f4f7fb;
+    --color-steel-blue-100: #e8eef6;
+    --color-steel-blue-200: #ccdbeb;
+    --color-steel-blue-300: #9ebcdb;
+    --color-steel-blue-400: #6a9ac6;
+    --color-steel-blue-500: #4477a7;
+    --color-steel-blue-600: #366393;
+    --color-steel-blue-700: #2c5078;
+    --color-steel-blue-800: #284564;
+    --color-steel-blue-900: #263b54;
+    --color-steel-blue-950: #192738;
+
+    --color-st-tropaz: #255691;
+    --color-dodger-blue: #1f95f2;
+    --color-mercury: #e8e8e8;
+    --color-zircon: #ebf0fa;
+    --color-primary: #013b7a;
+    --color-mini-sb-icon: #104c8f;
+    --color-persian-green: #009493;
+    --color-persian-green-10: #008584;
+    --color-persian-green-20: #007676;
+    --color-persian-green-30: #006867;
+    --color-persian-green-40: #005958;
+    --color-persian-green-50: #004a4a;
+    --color-persian-green-60: #003b3b;
+
+
+}
+
+@layer theme {
+    /* .dark {
+        --color-accent: var(--color-white);
+        --color-accent-content: var(--color-white);
+        --color-accent-foreground: var(--color-neutral-800);
+    } */
+}
+
+@layer base {
+
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}
+
+[data-flux-field] {
+    @apply grid gap-2;
+}
+
+[data-flux-label] {
+    @apply  !mb-0 !leading-tight;
+}
+
+input:focus[data-flux-control],
+textarea:focus[data-flux-control],
+select:focus[data-flux-control] {
+    @apply outline-hidden ring-2 ring-accent ring-offset-2 ring-offset-accent-foreground;
+}
+
+/* \[:where(&)\]:size-4 {
+    @apply size-4;
+} */

@@ -1,0 +1,316 @@
+/* Left Navigation Sidebar - Exact CodeIgniter Match */
+.left-navigation {
+    position: fixed;
+    left: 0;
+    top: 60px;
+    z-index: 988;
+    padding-top: 0;
+}
+
+.left-navigation > ul {
+    width: 63px;
+    height: calc(100vh - 60px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #103d72;
+    padding-bottom: 110px;
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+.left-navigation > ul::-webkit-scrollbar {
+    width: 4px;
+}
+
+.left-navigation > ul::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.left-navigation > ul::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+}
+
+/* Menu Items */
+.left-navigation li {
+    position: static;
+    background: #083c76;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 0 0 3px;
+    list-style: none;
+}
+
+.left-navigation li:hover a.ln-drop-down,
+.left-navigation li.active a.ln-drop-down {
+    background: #467cb6;
+}
+
+.left-navigation li.active a.ln-drop-down:after,
+.left-navigation li:hover a.ln-drop-down:after {
+    content: "";
+    position: absolute;
+    right: -7px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 0 6px 9px;
+    border-color: transparent transparent transparent #467cb6;
+    transform: rotate(0);
+}
+
+/* Links */
+.left-navigation li a.ln-drop-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 3px;
+    background: #104c8f;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+}
+
+.left-navigation li a.ln-drop-down svg {
+    width: 19px;
+    margin: 0 auto;
+    fill: #fff;
+}
+
+.left-navigation li a.ln-drop-down svg path {
+    fill: #fff;
+}
+
+.left-navigation li a.ln-drop-down span {
+    display: none;
+}
+
+.left-navigation ul li a abbr {
+    display: none;
+    text-decoration: none;
+}
+
+/* Submenu Wrapper */
+.left-navigation li .submenu-wrapper {
+    position: absolute;
+    top: 0;
+    left: 58px;
+    z-index: 100;
+    display: none;
+    background: transparent;
+    color: aliceblue;
+    padding-left: 12px;
+}
+
+.left-navigation li:hover > .submenu-wrapper {
+    display: block;
+    left: 49px !important;
+    margin-top: 10px;
+}
+
+.left-navigation.expand-menu li:hover > .submenu-wrapper {
+    left: 188px !important;
+    margin-top: 8px;
+}
+
+.left-navigation li > .submenu-wrapper ul {
+    border-radius: 7px;
+    width: 170px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.left-navigation li > .submenu-wrapper ul li {
+    background: #467cb6;
+    position: relative;
+    padding: 5px 8px;
+    margin: 0;
+}
+
+.left-navigation li:nth-child(5) > .submenu-wrapper ul li .ln-submenu {
+    top: auto;
+    bottom: 0;
+}
+
+.left-navigation li > .submenu-wrapper ul li:first-child {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.left-navigation li > .submenu-wrapper ul li:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.left-navigation li > .submenu-wrapper ul li:hover {
+    background: #104c8f;
+}
+
+.left-navigation li > .submenu-wrapper ul li a {
+    color: #fff !important;
+    width: 100%;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.left-navigation li > .submenu-wrapper ul li a:hover {
+    color: #fff !important;
+}
+
+.left-navigation li > .submenu-wrapper ul li h3 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    padding: 4px 0;
+    color: #fff !important;
+}
+
+.left-navigation i {
+    color: #ffffff !important;
+}
+
+.left-navigation li > .submenu-wrapper ul li h3 a {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* Nested submenu (third level) link colors */
+.left-navigation li > .submenu-wrapper ul li .ln-submenu li a {
+    color: #fff !important;
+}
+
+.left-navigation li > .submenu-wrapper ul li .ln-submenu li a:hover {
+    color: #fff !important;
+}
+
+.left-navigation li > .submenu-wrapper ul li .ln-submenu li {
+    background: #467cb6 !important;
+}
+
+.left-navigation li > .submenu-wrapper ul li .ln-submenu li:hover {
+    background: #104c8f !important;
+}
+
+/* Third Level Submenu */
+.left-navigation li > .submenu-wrapper ul li .ln-submenu {
+    display: block;
+    left: auto;
+    right: -160px;
+    position: absolute;
+    display: none;
+    top: 0;
+    padding-left: 8px;
+}
+
+.left-navigation li > .submenu-wrapper ul li:hover .ln-submenu {
+    display: block;
+}
+
+/* Expand Button */
+.expand-btn {
+    position: fixed;
+    z-index: 9999;
+    margin: 0 auto;
+    float: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    background: #184d8b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 8px;
+    cursor: pointer;
+    bottom: 11px;
+    border: 1px solid #3a7ed1;
+    transition: background 0.2s;
+}
+
+.expand-btn:hover {
+    background: #467cb6;
+}
+
+.expand-btn i {
+    color: #fff !important;
+    font-size: 16px;
+}
+
+/* Expanded State */
+.left-navigation.expand-menu > ul {
+    width: 205px;
+}
+
+.left-navigation.expand-menu a.ln-drop-down abbr {
+    display: inline-block;
+    font-size: 12px;
+    color: #ffffff !important;
+}
+
+.left-navigation.expand-menu a.ln-drop-down {
+    width: 181px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    color: #fff;
+    gap: 10px;
+    padding: 0px 15px;
+}
+
+.left-navigation.expand-menu ul li a.ln-drop-down svg {
+    width: 20px;
+    margin: 0 10px;
+}
+
+/* Content wrapper adjustment */
+body.has-left-nav .content-wrapper {
+    margin-left: 63px;
+    margin-top: 60px;
+    min-height: calc(100vh - 60px);
+    transition: margin-left 0.3s ease;
+}
+
+body.has-left-nav.expand-menu .content-wrapper {
+    margin-left: 205px;
+}
+
+body.has-left-nav .main-footer {
+    margin-left: 63px;
+    transition: margin-left 0.3s ease;
+}
+
+body.has-left-nav.expand-menu .main-footer {
+    margin-left: 205px;
+}
+
+body.has-left-nav .main-header {
+    left: 0;
+    transition: left 0.3s ease;
+}
+
+body.has-left-nav.expand-menu .main-header {
+    left: 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .left-navigation > ul {
+        width: 50px;
+    }
+    
+    body.has-left-nav .content-wrapper {
+        margin-left: 50px;
+    }
+    
+    body.has-left-nav .main-footer {
+        margin-left: 50px;
+    }
+}

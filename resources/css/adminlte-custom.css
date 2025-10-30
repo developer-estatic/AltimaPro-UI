@@ -1,0 +1,2894 @@
+/* ===================================================
+   ALTIMA CRM - AdminLTE Custom Styling
+   Additional styles to match staging design
+   =================================================== */
+
+/* ===== AdminLTE Theme Overrides ===== */
+
+/* Skin Blue Customization */
+.skin-blue .main-header .navbar {
+    background-color: #003B7A;
+}
+
+.skin-blue .main-header .logo {
+    background-color: #001D3D;
+    border-right: 1px solid #003B7A;
+}
+
+.skin-blue .main-header .logo:hover {
+    background-color: #002952;
+}
+
+.skin-blue .main-sidebar {
+    background-color: #222d32;
+}
+
+/* Sidebar Menu */
+.sidebar-menu > li.active > a {
+    border-left-color: #3c8dbc;
+    background: #1e282c;
+}
+
+.sidebar-menu > li > .treeview-menu {
+    background-color: #2c3b41;
+}
+
+.sidebar-menu .treeview-menu > li.active > a {
+    color: #fff;
+    background: #1e282c;
+}
+
+/* Box Customization */
+.box.box-primary {
+    border-top-color: #3c8dbc;
+}
+
+.box-header.with-border {
+    border-bottom: 1px solid #f4f4f4;
+}
+
+/* Table Styling */
+.table-bordered {
+    border: 1px solid #ddd;
+}
+
+.table-bordered > thead > tr > th,
+.table-bordered > thead > tr > td {
+    border-bottom-width: 2px;
+    background-color: #f8f9fa;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* DataTables Integration */
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 0.5em 1em;
+    margin-left: 2px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+    background: #3c8dbc;
+    color: white !important;
+    border-color: #3c8dbc;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background: #f4f4f4;
+    color: black !important;
+    border-color: #ddd;
+}
+
+/* Badges */
+.badge-bronze {
+    background-color: #CD7F32;
+    color: #fff;
+}
+
+.badge-silver {
+    background-color: #C0C0C0;
+    color: #333;
+}
+
+.badge-gold {
+    background-color: #FFD700;
+    color: #333;
+}
+
+.badge-platinum {
+    background-color: #E5E4E2;
+    color: #333;
+}
+
+.badge-diamond {
+    background-color: #B9F2FF;
+    color: #006B8F;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #3c8dbc;
+    border-color: #367fa9;
+}
+
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #367fa9;
+    border-color: #204d74;
+}
+
+/* Content Header */
+.content-header {
+    padding: 15px 15px 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.content-header > h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.content-header > h1 > small {
+    font-size: 15px;
+    display: inline-block;
+    padding-left: 4px;
+    font-weight: 300;
+}
+
+.content-header > .breadcrumb {
+    float: right;
+    background: transparent;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 7px 5px;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    border-radius: 2px;
+}
+
+/* Action Buttons */
+.action-btn {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 2px;
+    transition: all 0.3s;
+}
+
+.action-btn:hover {
+    transform: scale(1.1);
+}
+
+.btn-view {
+    background-color: #3c8dbc;
+    color: #fff;
+}
+
+.btn-edit {
+    background-color: #f39c12;
+    color: #fff;
+}
+
+.btn-delete {
+    background-color: #dd4b39;
+    color: #fff;
+}
+
+/* Status Indicators */
+.status-active {
+    color: #00a65a;
+}
+
+.status-inactive {
+    color: #dd4b39;
+}
+
+.status-pending {
+    color: #f39c12;
+}
+
+/* Form Controls */
+.form-control:focus {
+    border-color: #3c8dbc;
+    box-shadow: 0 0 0 0.2rem rgba(60, 141, 188, 0.25);
+}
+
+.select2-container--default .select2-selection--single:focus {
+    border-color: #3c8dbc;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767px) {
+    .content-header > .breadcrumb {
+        position: relative;
+        float: none;
+        background-color: #ecf0f5;
+        padding: 5px 10px;
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+    
+    .box-tools {
+        float: none !important;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+/* Loading Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay > .fa {
+    font-size: 50px;
+}
+
+/* Custom Scrollbar for Sidebar */
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: #1a2226;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+    background: #3c8dbc;
+    border-radius: 5px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+    background: #357ca5;
+}
+
+/* Alerts */
+.alert {
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffeaa7;
+    color: #856404;
+}
+
+.alert-info {
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+    color: #0c5460;
+}
+
+/* Fix for Livewire/AlpineJS compatibility */
+[x-cloak] {
+    display: none !important;
+}
+
+/* Tooltip Styling */
+.tooltip-inner {
+    background-color: #3c8dbc;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #3c8dbc;
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+.modal-header {
+    background-color: #3c8dbc;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-header .close {
+    color: #fff;
+    opacity: 0.8;
+}
+
+.modal-header .close:hover {
+    opacity: 1;
+}
+
+/* Pagination */
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+    background-color: #3c8dbc;
+    border-color: #3c8dbc;
+}
+
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+    color: #3c8dbc;
+}
+
+/* ===================================================
+   GLOBAL TAB STRUCTURE (HORIZONTAL TABS)
+   Based on staging site design pattern
+   =================================================== */
+
+/* Utility Classes */
+.justify-content-end {
+    justify-content: end;
+}
+
+/* Common Tabs - cmn-tabe */
+.cmn-tabe .nav {
+    background: #e8f4fe;
+    border-bottom: 0;
+}
+
+.cmn-tabe .nav li {
+    margin: 0;
+    padding: 0;
+}
+
+.cmn-tabe .nav li.active {
+    margin: 0;
+    padding: 0;
+}
+
+.cmn-tabe .nav li a {
+    border: 0;
+    border-bottom: 2px solid #e8f4fe;
+    background: transparent;
+    background-image: none !important;
+    background-color: #e8f4fe !important;
+    border-radius: 0;
+}
+
+.cmn-tabe .nav li.active a {
+    border: 0;
+    border-bottom: 2px solid #1B84E7;
+    border-radius: 0;
+    color: #1B84E7;
+    font-weight: normal !important;
+}
+
+.cmn-tabe .nav li.active a:focus {
+    border: 0;
+    outline: none;
+    border-bottom: 2px solid #1B84E7;
+}
+
+.cmn-tabe .nav li a:hover {
+    color: #1B84E7;
+    border: 0;
+    border-bottom: 2px solid #1B84E7;
+    border-radius: 0;
+}
+
+.cmn-tabe .nav li.active a:hover {
+    border: 0;
+    border-bottom: 2px solid;
+}
+
+.cmn-tabe .panel-title {
+    display: block;
+    width: 100%;
+    font-size: 14px;
+}
+
+.cmn-tabe .panel-title a {
+    position: relative;
+    display: block;
+    color: #000;
+}
+
+.cmn-tabe .panel-title a:after {
+    float: right;
+    font-family: 'Glyphicons Halflings';
+    color: #000;
+    content: "\e258";
+    transition: all .5s;
+    position: absolute;
+    transform: rotate(90deg);
+    top: 3px;
+    font-size: 14px;
+    right: 0;
+}
+
+.cmn-tabe .panel-heading a.collapsed:after {
+    content: "\e258";
+    transform: rotate(0deg);
+}
+
+.cmn-tabe .nav li a {
+    border: 1px solid #C5E1FF;
+    margin-right: 7px;
+    margin-bottom: -1px;
+    font-family: 'Lexend Deca Regular';
+    padding: 10px 15px;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+}
+
+/* Common New Tab - cmn-newtab */
+.cmn-newtab .nav {
+    background: transparent;
+    border-bottom: 1px solid #C5E1FF;
+}
+
+.cmn-newtab .nav li a {
+    border: 1px solid #C5E1FF;
+    margin-right: 7px;
+    margin-bottom: -2px;
+    font-family: 'Lexend Deca Regular';
+    background-color: transparent !important;
+    color: #000;
+    padding: 10px 15px;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    font-size: 13px;
+}
+
+.cmn-newtab .nav li a:hover {
+    border: 1px solid #C5E1FF;
+    margin-right: 7px;
+    margin-bottom: -2px;
+    font-family: 'Lexend Deca Regular';
+    padding: 10px 15px;
+    color: #001D3D;
+    border-radius: 4px 4px 0 0;
+    background: #C5E1FF !important;
+}
+
+.cmn-newtab .nav li.active a {
+    color: #001D3D;
+    border: 1px solid #C5E1FF;
+    background-color: #C5E1FF !important;
+    padding: 14px 18px;
+    font-family: "Lexend Deca Regular";
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.cmn-newtab .nav li.active a:hover {
+    border: 1px solid #C5E1FF;
+}
+
+.cmn-newtab .nav-tabs-custom > .nav-tabs {
+    align-items: end;
+}
+
+.cmn-newtab .nav li.active a:focus {
+    border: 1px solid #C5E1FF;
+}
+
+.cmn-newtab .tabbable .nav li a {
+    margin-bottom: -5px;
+}
+
+.cmn-newtab .tabbable .nav {
+    overflow: hidden;
+}
+
+/* Fund Top (Alternative Tab Style) */
+.fund-top {
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #f4f4f4;
+}
+
+.fund-top .nav-tabs {
+    border: 0;
+    margin: 0;
+}
+
+.fund-top li {
+    margin: 0;
+    border: 0;
+}
+
+.fund-top li.active {
+    margin: 0;
+    border: 0;
+}
+
+.fund-top li a {
+    width: 185px;
+    text-align: center;
+    background-color: #e8f4fe;
+    margin: 0 5px 0 0;
+    color: #000;
+    border: 0;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 10px 15px;
+    font-family: 'Lexend Deca Regular', sans-serif;
+}
+
+.fund-top li.active a {
+    background-color: transparent;
+    color: #1a5999;
+    border: 0;
+    position: relative;
+    font-family: 'Lexend Deca Regular', sans-serif;
+}
+
+.fund-top li.active a:after {
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    background: #1b84e7;
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+/* Inner Nav Tab Font Size */
+.innernavtabfont .fund-top li a {
+    font-size: 12px !important;
+    width: 125px !important;
+}
+
+/* Tabs Left Style */
+.nav.nav-tabs.tabs-left {
+    border-bottom: 0;
+}
+
+.nav.nav-tabs.tabs-left > li {
+    float: none;
+    margin: 0;
+}
+
+.nav.nav-tabs.tabs-left > li > a {
+    border-radius: 0;
+}
+
+/* Fund Body (Tab Content Area) */
+.fund-body {
+    padding: 15px;
+}
+
+.fund-body .listingpg {
+    background: #fff;
+}
+
+/* Tab Content */
+.tab-content {
+    padding: 15px;
+}
+
+.tab-content.border {
+    border: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+}
+
+.tab-pane {
+    min-height: 200px;
+}
+
+/* ===================================================
+   GLOBAL FORM STRUCTURE
+   Form fields, inputs, and controls
+   =================================================== */
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-weight: 600;
+    margin-bottom: 5px;
+    display: block;
+    font-family: 'Lexend Deca Regular', sans-serif;
+}
+
+.form-group label.control-label {
+    color: #333;
+    font-size: 13px;
+}
+
+/* Important Field Indicator */
+.impfiled {
+    color: #dd4b39;
+    font-weight: bold;
+}
+
+/* Form Controls */
+.form-control {
+    border-radius: 3px;
+    border: 1px solid #d2d6de;
+    font-size: 14px;
+    font-family: 'Lexend Deca Regular', sans-serif;
+}
+
+.form-control:focus {
+    border-color: #3c8dbc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(60,141,188,.6);
+}
+
+/* Form Body */
+.form-body {
+    padding: 15px;
+}
+
+.form-body-approved-pending {
+    background: #fff;
+}
+
+/* Modal Form Footer */
+.modal-form-footer {
+    padding: 15px;
+    text-align: left;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 15px;
+}
+
+/* Checkbox and Radio Buttons */
+.vsbd ul.checkbox-view-list li {
+    width: 25%;
+    float: left;
+}
+
+.gray-color {
+    color: #636363 !important;
+}
+
+input[type=checkbox], 
+input[type=radio] {
+    margin: 4px 8px 0 0;
+}
+
+.add-grp-commision input[type=checkbox], 
+.add-grp-commision input[type=radio] {
+    margin: 14px 8px 0 8px;
+    position: relative;
+    top: 2px;
+}
+
+.add-grp-commision .form-group {
+    margin-bottom: 23px;
+}
+
+.add-grp-commision .form-check label {
+    margin: 0 15px 0 0;
+}
+
+.radio-iss {
+    display: flex;
+    align-items: center;
+}
+
+.radio-iss label {
+    margin: 0 10px 0 0;
+}
+
+.common-new-popup .modal-body .radio-iss input[type=radio] {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+/* Common Height Form */
+.cmn-hght-form .form-control {
+    height: 27px;
+    border-radius: 0 !important;
+}
+
+.cmn-hght-form .input-group-addon {
+    height: 27px;
+    padding-top: 4px !important;
+    border-radius: 4px 0px 0px 4px;
+}
+
+.cmn-hght-form .inputbox-search-btn {
+    height: 27px !important;
+    padding: 6px;
+    border-radius: 0 4px 4px 0;
+}
+
+/* Small Modal */
+.sml-modal {
+    width: 370px !important;
+    margin-right: 106px;
+}
+
+/* Language Wrapper */
+.lang-wrap {
+    display: block;
+    border-radius: 3px;
+    background: #fff;
+}
+
+/* Arrow Button */
+.arrow-btn {
+    color: #1B84E7;
+    font-size: 14px;
+    border: 1px solid;
+    padding: 0px 10px;
+    display: inline-block;
+    margin: 0px 3px;
+    border-radius: 5px;
+}
+
+/* Date Range Picker Adjustments */
+.daterangepicker.ltr {
+    left: auto !important;
+    right: 96px !important;
+}
+
+.daterangepicker.opensright:before {
+    left: auto;
+    right: 9px;
+}
+
+.daterangepicker.opensright:after {
+    left: auto;
+    right: 10px;
+}
+
+/* ===================================================
+   GLOBAL TABLE STRUCTURE
+   DataTables and standard tables - Matching Staging Site
+   =================================================== */
+
+/* Wrapper Content */
+.wrapper-content {
+    padding: 15px;
+}
+
+.wrapper-content .content {
+    padding-top: 0;
+    border: 0;
+    border-radius: 4px;
+}
+
+/* DataTables Wrapper */
+.wrapper-content table.dataTable {
+    margin-top: -1px !important;
+    width: 100% !important;
+    border: 1px solid #d2d6de;
+    border-collapse: collapse;
+    background: #fff;
+}
+
+/* Common Table Classes */
+.cmn-tabe {
+    background: #fff;
+}
+
+.cmn-newtab {
+    padding: 15px;
+}
+
+/* Table Responsive */
+.table-responsive {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow-x: auto;
+}
+
+/* ===================================================
+   GLOBAL TABLE STYLING (All Tables)
+   =================================================== */
+
+/* ===================================================
+   GLOBAL ACTION ICON BUTTON + TOOLTIP (applies everywhere)
+   =================================================== */
+
+/* Unified icon button (matches admin panel look) */
+[data-flux-button],
+.crm-icon-btn {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 32px !important;
+    height: 32px !important;
+    border-radius: 6px !important;
+    background: #2F80CB !important;
+    color: #fff !important;
+    border: 1px solid rgba(0,0,0,0.08) !important;
+    box-shadow: 0 1px 0 rgba(255,255,255,0.2) inset !important;
+    transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.05s ease !important;
+}
+
+[data-flux-button]:hover,
+.crm-icon-btn:hover {
+    background: #246cb0 !important;
+}
+
+[data-flux-button]:active,
+.crm-icon-btn:active {
+    transform: translateY(0.5px) !important;
+}
+
+/* Bootstrap tooltip tuning (used globally) */
+.tooltip .tooltip-inner {
+    font-size: 12px !important;
+    padding: 6px 8px !important;
+    background-color: #1f2937 !important; /* zinc-800 */
+    color: #fff !important;
+    border-radius: 4px !important;
+}
+
+.tooltip.top .tooltip-arrow,
+.tooltip.right .tooltip-arrow,
+.tooltip.bottom .tooltip-arrow,
+.tooltip.left .tooltip-arrow {
+    border-width: 5px !important;
+}
+
+/* Hide original flux tooltip content container if present */
+[data-flux-tooltip-content] {
+    display: none !important;
+}
+
+/* ===================================================
+   GLOBAL MODAL, BUTTONS, AND FORM FIELDS
+   =================================================== */
+
+/* Modal - center in viewport, consistent padding and shadow */
+body.has-left-nav .modal {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 20px !important; /* allow breathing room */
+    overflow-y: auto !important;
+}
+
+body.has-left-nav .modal .modal-dialog {
+    margin: 0 auto !important; /* flex centered */
+    max-width: 640px !important;
+    width: 100% !important;
+    position: relative !important;
+    top: 50% !important;
+    transform: translateY(-50%) !important;
+}
+
+body.has-left-nav .modal .modal-content {
+    border-radius: 8px !important;
+    border: 1px solid #E1EBF6 !important;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15) !important;
+}
+
+body.has-left-nav .modal .modal-header {
+    border-bottom: 1px solid #E1EBF6 !important;
+    background: #f7fbff !important;
+}
+
+body.has-left-nav .modal .modal-footer {
+    border-top: 1px solid #E1EBF6 !important;
+    background: #fff !important;
+}
+
+.modal.show .modal-dialog,
+.modal.in .modal-dialog {
+    margin: 0 auto !important;
+}
+
+/* Ensure tooltip shows above modal/backdrop */
+.tooltip { z-index: 2051 !important; }
+.modal-backdrop { z-index: 1040 !important; }
+
+/* Buttons - consistent sizes and colors */
+.btn,
+button.btn {
+    border-radius: 6px !important;
+    padding: 6px 12px !important;
+    font-weight: 600 !important;
+    height: 32px !important;
+    line-height: 20px !important;
+}
+
+.modal .btn { min-width: 68px !important; }
+.modal .btn + .btn { margin-left: 8px !important; }
+
+.btn-primary {
+    background: #2F80CB !important;
+    border-color: #2F80CB !important;
+}
+.btn-primary:hover { background: #246cb0 !important; border-color: #246cb0 !important; }
+
+.btn-default, .btn-secondary {
+    background: #eef5ff !important;
+    color: #1D2433 !important;
+    border-color: #C5E1FF !important;
+}
+.btn-default:hover, .btn-secondary:hover { background: #e3efff !important; }
+
+.btn-danger { background: #e55353 !important; border-color: #e55353 !important; }
+.btn-danger:hover { background: #d23f3f !important; }
+
+/* Form fields - global look */
+input.form-control,
+select.form-control,
+textarea.form-control,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+select,
+textarea {
+    height: 32px !important;
+    padding: 6px 10px !important;
+    border: 1px solid #C5E1FF !important;
+    border-radius: 6px !important;
+    background: #fff !important;
+    color: #1D2433 !important;
+    box-shadow: none !important;
+}
+
+textarea.form-control, textarea { min-height: 80px !important; height: auto !important; }
+
+input.form-control:focus,
+select.form-control:focus,
+textarea.form-control:focus,
+input:focus, select:focus, textarea:focus {
+    outline: none !important;
+    border-color: #74A3D5 !important;
+    box-shadow: 0 0 0 3px rgba(116,163,213,0.25) !important;
+}
+
+/* Labels */
+label { font-weight: 600 !important; color: #374151 !important; }
+
+/* Select2 alignment with inputs */
+.select2-container .select2-selection--single {
+    height: 32px !important;
+    border: 1px solid #C5E1FF !important;
+    border-radius: 6px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 30px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 30px !important;
+}
+
+/* All Tables - Base Styling */
+table {
+    border-collapse: collapse;
+    background: #fff;
+}
+
+/* Table Headers - Light Blue Background */
+table thead th,table.dataTable thead th,.table thead th,.dataTable thead th {
+    background-color: #d4e7fd !important; /* don't override background-image from DataTables */
+    color: #1D2433 !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    padding: 12px 10px !important;
+    /* border:1px solid #d2d6de!important; */
+    border: 1px solid #C5E1FF !important;
+    text-align: left;
+    vertical-align: middle;
+    white-space: nowrap;
+    line-height: 1.4
+}
+
+/* Table header alignment - let DataTables handle naturally */
+table thead th,
+table.dataTable thead th {
+    text-align: left;
+}
+
+table thead th:first-child,
+table.dataTable thead th:first-child {
+    text-align: left;
+}
+
+/* Override text alignment for specific headers if needed */
+.table thead th.text-left,
+.dataTable thead th.text-left {
+    text-align: left !important;
+}
+
+/* Sortable Column Headers */
+table thead th.sorting,
+table thead th.sorting_asc,
+table thead th.sorting_desc,
+.dataTable thead th.sorting,
+.dataTable thead th.sorting_asc,
+.dataTable thead th.sorting_desc {
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px !important;
+}
+
+/* Use DataTables' default sorting indicator styles (no overrides here) */
+
+/* Keep defaults for :after indicators */
+
+/* Remove custom active state styling */
+
+/* Use default DataTables background images for sorting */
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc {
+    background-image: initial !important;
+}
+
+/* Show dt-column-order indicator (multi-order hint) */
+/* Reset dt-column-order indicator styling – let DataTables render default tiny index */
+span.dt-column-order,
+.dt-column-order,
+.sorting span.dt-column-order,
+.sorting_asc span.dt-column-order,
+.sorting_desc span.dt-column-order {
+    display: inline-block !important;
+    visibility: visible !important;
+    width: auto !important;
+    height: auto !important;
+    background: none !important;
+    padding: 0 !important;
+    margin-left: 2px !important;
+    line-height: 1 !important;
+    color: inherit !important;
+}
+
+/* Table Body Rows */
+table tbody tr,
+table.dataTable tbody tr,
+.table tbody tr,
+.dataTable tbody tr {
+    border-bottom: 1px solid #d2d6de;
+}
+
+table tbody tr:nth-child(odd),
+table.dataTable tbody tr:nth-child(odd),
+.table tbody tr:nth-child(odd),
+.dataTable tbody tr:nth-child(odd) {
+    background: #fff;
+}
+
+table tbody tr:nth-child(even),
+table.dataTable tbody tr:nth-child(even),
+.table tbody tr:nth-child(even),
+.dataTable tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Row Hover Effect */
+table tbody tr:hover,
+table.dataTable tbody tr:hover,
+.table tbody tr:hover,
+.dataTable tbody tr:hover {
+    background: #f0f8ff !important;
+}
+
+/* Table Body Cells */
+table tbody td,
+table.dataTable tbody td,
+.table tbody td,
+.dataTable tbody td {
+    padding: 6px 15px !important;
+    height: 20px;
+    color: #000 !important;
+    border-top: 1px solid #E1EBF6 !important;
+}
+
+/* User Avatar in Tables */
+.user-avatar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #d5e8f3;
+    color: #333;
+    font-size: 12px;
+    font-weight: 600;
+    margin-right: 8px;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+/* Email Icon in Tables */
+.email-icon {
+    color: #337ab7;
+    margin-right: 6px;
+    font-size: 13px;
+}
+
+/* Checkbox Column */
+table tbody td:first-child,
+table thead th:first-child,
+table.dataTable tbody td:first-child,
+table.dataTable thead th:first-child,
+.table tbody td:first-child,
+.table thead th:first-child,
+.dataTable tbody td:first-child,
+.dataTable thead th:first-child {
+    /* text-align: center; */
+    /* width: 40px; */
+}
+
+table tbody td input[type="checkbox"],
+table.dataTable tbody td input[type="checkbox"],
+.table tbody td input[type="checkbox"],
+.dataTable tbody td input[type="checkbox"] {
+    margin: 0;
+    cursor: pointer;
+}
+
+/* Status Badge Styling */
+table tbody td .badge,
+table.dataTable tbody td .badge,
+.table tbody td .badge,
+.dataTable tbody td .badge {
+    padding: 4px 8px;
+    font-size: 11px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+
+/* Action Buttons in Tables */
+table tbody td .btn,
+table.dataTable tbody td .btn,
+.table tbody td .btn,
+.dataTable tbody td .btn {
+    padding: 4px 8px;
+    font-size: 12px;
+    margin: 0 2px;
+}
+
+/* Email Links in Tables */
+table tbody td a[href^="mailto"],
+table.dataTable tbody td a[href^="mailto"],
+.table tbody td a[href^="mailto"],
+.dataTable tbody td a[href^="mailto"] {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+table tbody td a[href^="mailto"]:hover,
+table.dataTable tbody td a[href^="mailto"]:hover,
+.table tbody td a[href^="mailto"]:hover,
+.dataTable tbody td a[href^="mailto"]:hover {
+    text-decoration: underline;
+}
+
+/* Table Footer */
+.table-footer {
+    padding: 15px;
+    background: #f9f9f9;
+    border-top: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.table-footer-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Pagination Styling */
+.pagination {
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #337ab7;
+    margin: 0 2px;
+    border-radius: 3px;
+    font-size: 13px;
+    min-width: 32px;
+    text-align: center;
+}
+
+.pagination > li > a:hover {
+    background: #f0f8ff;
+    border-color: #337ab7;
+    text-decoration: none;
+}
+
+.pagination > li.active > a,
+.pagination > li.active > span {
+    background: #337ab7;
+    border-color: #337ab7;
+    color: #fff;
+}
+
+.pagination > li.disabled > a,
+.pagination > li.disabled > span {
+    color: #999;
+    cursor: not-allowed;
+    background: #f5f5f5;
+}
+
+/* DataTables Pagination Wrapper */
+.dataTables_paginate {
+    float: right;
+    margin: 10px 0;
+    display: inline-block !important;
+    visibility: visible !important;
+}
+
+.dataTables_paginate .paginate_button {
+    padding: 6px 12px;
+    margin: 0 3px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #337ab7 !important;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 13px;
+    min-width: 35px;
+    text-align: center;
+    display: inline-block !important;
+    line-height: 1.4;
+    transition: all 0.2s ease;
+}
+
+.dataTables_paginate .paginate_button:hover {
+    background: #e8f4ff !important;
+    border-color: #337ab7 !important;
+    color: #337ab7 !important;
+    text-decoration: none;
+}
+
+.dataTables_paginate .paginate_button.current {
+    background: #337ab7 !important;
+    border-color: #337ab7 !important;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+.dataTables_paginate .paginate_button.current:hover {
+    background: #2a6ba8 !important;
+    border-color: #2a6ba8 !important;
+}
+
+.dataTables_paginate .paginate_button.disabled {
+    color: #ccc !important;
+    cursor: not-allowed;
+    background: #f8f8f8 !important;
+    border-color: #e0e0e0 !important;
+}
+
+.dataTables_paginate .paginate_button.disabled:hover {
+    background: #f8f8f8 !important;
+    border-color: #e0e0e0 !important;
+    color: #ccc !important;
+}
+
+/* Pagination buttons spacing */
+.dataTables_paginate .pagination {
+    margin: 0;
+}
+
+/* Ensure pagination info is visible */
+.dataTables_info {
+    display: block !important;
+    visibility: visible !important;
+    font-weight: normal;
+}
+
+/* Bottom row wrapper to ensure proper layout */
+.dataTables_wrapper .bottom {
+    padding: 15px 0;
+    margin-top: 15px;
+    clear: both;
+    overflow: hidden;
+}
+
+.dataTables_wrapper .bottom::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Ensure bottom row is properly displayed */
+.dataTables_wrapper > .row:last-child,
+.dataTables_wrapper .bottom,
+div.dataTables_wrapper .bottom,
+div.bottom,
+.bottom,
+#permissions-table_wrapper .bottom,
+#users-table_wrapper .bottom,
+table + div.bottom {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+    padding: 15px 10% !important;
+    border-top: 1px solid #f0f0f0 !important;
+    flex-wrap: wrap !important;
+}
+
+/* DataTables Info Text - Left Side */
+div.dataTables_wrapper div.dataTables_info,
+.dataTables_wrapper .dt-info,
+.bottom .dt-info {
+    position: relative;
+    float: left;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin: 0;
+    color: #666;
+    display: inline-block !important;
+    line-height: 32px;
+}
+
+/* DataTables Pagination Container - Right Side */
+div.dataTables_paginate,
+.dataTables_wrapper .dataTables_paginate,
+.dataTables_wrapper .dt-paging,
+.bottom .dt-paging {
+    border-top: 0;
+    padding: 0;
+    margin: 0;
+    float: right;
+    font-size: 12px;
+    display: inline-block !important;
+}
+
+/* Pagination Navigation */
+.dt-paging nav,
+.dataTables_paginate nav {
+    display: inline-block;
+}
+
+/* Pagination UL */
+.dt-paging .pagination,
+.dataTables_paginate .pagination {
+    display: inline-flex;
+    gap: 3px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    align-items: center;
+}
+
+/* Pagination List Items */
+.dt-paging-button.page-item,
+.dataTables_paginate .paginate_button {
+    display: inline-block;
+    margin: 0 2px;
+    padding: 0;
+}
+
+/* Pagination Buttons/Links */
+.dt-paging-button .page-link,
+.dataTables_paginate .paginate_button {
+    background: #fafafa;
+    color: #74A3D5;
+    border: 1px solid #BDD3EB;
+    border-radius: 100px;
+    margin-left: 3px;
+    transition: 0.2sease all;
+    height: 27px;
+    width: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0;
+}
+
+/* Pagination Button Hover */
+.dt-paging-button .page-link:hover,
+.dataTables_paginate .paginate_button:not(.disabled):hover {
+    background: #e9ecef;
+    border-color: #ddd;
+    color: #0058B8;
+    text-decoration: none;
+}
+
+/* Active Page Button */
+.dt-paging-button.active .page-link,
+.dataTables_paginate .paginate_button.current {
+    z-index: 3;
+    background-color: #0058B8 !important;
+    border-color: #185BC3 !important;
+    color: #fff !important;
+    cursor: default;
+    font-weight: 600;
+}
+
+/* Disabled Pagination Buttons */
+.dt-paging-button.disabled .page-link,
+.dataTables_paginate .paginate_button.disabled {
+    color: #999 !important;
+    background: #fff !important;
+    border-color: #ddd !important;
+    cursor: not-allowed !important;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+/* Ellipsis Button */
+.dt-paging-button .page-link.ellipsis,
+.dataTables_paginate .ellipsis {
+    border: none;
+    background: transparent;
+    cursor: default;
+    pointer-events: none;
+}
+
+/* First, Previous, Next, Last Buttons */
+.dt-paging-button .page-link.first,
+.dt-paging-button .page-link.previous,
+.dt-paging-button .page-link.next,
+.dt-paging-button .page-link.last {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Remove button default styles */
+/* .dt-paging-button button.page-link {
+    background: #fff;
+    border: 1px solid #ddd;
+    outline: none;
+    box-shadow: none;
+} */
+
+.dt-paging-button button.page-link:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(51, 122, 183, 0.2);
+}
+
+/* Ensure info and pagination are on same row */
+.dataTables_wrapper .row:last-of-type {
+    display: flex !important;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Pagination Dummy Divs */
+.pagination_dummy_div,
+.pagination_dummy_div2 {
+    display: inline-block;
+}
+
+.dataTables_length_new {
+    display: inline-block;
+}
+
+.dataTables_length_new label {
+    margin: 0;
+    font-weight: normal;
+}
+
+.dataTables_length_new select {
+    width: auto;
+    display: inline-block;
+    margin: 0 5px;
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+/* Marketing Campaign Specific */
+.marketing-campaign .dataTables_length_new {
+    margin-left: 15px;
+}
+
+/* DataTables Info Text */
+.dataTables_info {
+    font-size: 13px;
+    color: #666;
+    display: inline-block !important;
+}
+
+/* Search Input in Tables */
+.dataTables_filter input {
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 13px;
+}
+
+/* DataTables Processing */
+.dataTables_processing {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -26px;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* DataTables Scroll */
+.dataTables_scroll {
+    clear: both;
+}
+
+.dataTables_scrollBody {
+    overflow: auto;
+}
+
+/* ===================================================
+   FORCE ALL DATATABLES CONTROLS TO BE VISIBLE
+   APPLIES TO EVERY TABLE ON EVERY PAGE
+   =================================================== */
+
+/* Force pagination to be visible */
+.dataTables_paginate,
+#permissions-table_wrapper .dataTables_paginate,
+#users-table_wrapper .dataTables_paginate,
+.dataTables_wrapper .dataTables_paginate,
+.dt-paging,
+div[id$="_wrapper"] .dataTables_paginate,
+div[id$="_wrapper"] .dt-paging {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Force length menu to be visible */
+.dataTables_length,
+.dataTables_wrapper .dataTables_length,
+.dt-length,
+div[id$="_wrapper"] .dataTables_length,
+div[id$="_wrapper"] .dt-length {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Force search filter to be visible */
+.dataTables_filter,
+.dataTables_wrapper .dataTables_filter,
+.dt-search,
+div[id$="_wrapper"] .dataTables_filter,
+div[id$="_wrapper"] .dt-search {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Force info text to be visible */
+.dataTables_info,
+.dataTables_wrapper .dataTables_info,
+.dt-info,
+div[id$="_wrapper"] .dataTables_info,
+div[id$="_wrapper"] .dt-info {
+    display: inline-block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Force top and bottom containers to be visible */
+.dataTables_wrapper .top,
+.dataTables_wrapper .bottom,
+div[id$="_wrapper"] .top,
+div[id$="_wrapper"] .bottom {
+    display: flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+}
+
+/* Override any hidden classes */
+.dataTables_wrapper > *,
+div[id$="_wrapper"] > * {
+    max-height: none !important;
+}
+
+/* SPECIFIC FIX FOR USERS TABLE */
+#users-table_wrapper,
+#users-table_wrapper .top,
+#users-table_wrapper .bottom,
+#users-table_wrapper .dataTables_length,
+#users-table_wrapper .dataTables_filter,
+#users-table_wrapper .dataTables_info,
+#users-table_wrapper .dataTables_paginate {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+
+#users-table_wrapper .top {
+    display: flex !important;
+}
+
+#users-table_wrapper .dataTables_length {
+    display: flex !important;
+}
+
+#users-table_wrapper .dataTables_filter {
+    display: flex !important;
+}
+
+/* Table Wrapper */
+.dataTables_wrapper {
+    padding: 0;
+    display: block !important;
+    visibility: visible !important;
+    width: 100%;
+    position: relative;
+}
+
+.dataTables_wrapper .row {
+    margin: 0;
+    display: block !important;
+}
+
+.dataTables_wrapper .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* ===== NO PAGE SCROLL - STAGING STRUCTURE (Only for pages with DataTables) ===== */
+
+/* Body - prevent page scroll ONLY when DataTables wrapper exists */
+body.sidebar-mini.has-left-nav {
+    overflow: hidden !important;
+    height: 100vh !important;
+}
+
+/* Content wrapper - fixed height, no scroll - ONLY for logged-in users with nav */
+body.has-left-nav .content-wrapper {
+    height: 100vh !important;
+    overflow: hidden !important;
+}
+
+/* Main content area - ONLY for pages with CRM content */
+body.has-left-nav .content-wrapper .content {
+    height: calc(100vh - 50px) !important;
+    overflow: hidden !important;
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 0 !important;
+}
+
+/* CRM container - flex layout - ONLY when it exists */
+body.has-left-nav .crm-middle-content-container {
+    flex: 1 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    overflow: hidden !important;
+    max-height: calc(100vh - 100px) !important;
+}
+
+/* Table Wrapper - flex layout, let DataTables handle width */
+.dataTables_wrapper {
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    visibility: visible !important;
+    height: 100% !important;
+    max-height: 100% !important;
+    overflow: hidden !important;
+}
+
+/* TOP section - fixed height, no shrink */
+.dataTables_wrapper .top {
+    flex-shrink: 0 !important;
+    width: 100% !important;
+    height: auto !important;
+}
+
+/* Middle section - scrollable table container */
+.dataTables_wrapper > div:nth-child(2):not(.top):not(.bottom),
+.dataTables_wrapper .dataTables_scroll,
+.dataTables_wrapper > .row:not(.top):not(.bottom) {
+    flex: 1 1 auto !important;
+    overflow-y: auto !important;
+    overflow-x: auto !important;
+    width: 100% !important;
+    min-height: 0 !important;
+}
+
+/* DataTables scroll header/body coordination - ensure only one header */
+.dataTables_scrollHead { display: block !important; }
+.dataTables_scrollHeadInner { display: block !important; }
+div.dt-scroll-head { display: block !important; }
+/* Hide any thead inside the scroll body (v1 and v2 class names) */
+.dataTables_scrollBody thead,
+.dataTables_scrollBody table thead,
+.dt-scroll-body thead,
+.dt-scroll-body table thead { display: none !important; }
+
+/* Table - Let DataTables handle widths automatically */
+table.dataTable {
+    /* border-collapse: collapse !important; */
+    margin-top: 0px !important;
+}
+
+/* TH - let DataTables manage header position with scrollHead */
+table.dataTable thead { position: static !important; background: #d4e7fd !important; }
+
+table.dataTable thead th {
+    background: #d4e7fd !important;
+}
+
+/* BOTTOM section - sticky at bottom, always visible */
+.dataTables_wrapper .bottom {
+    flex-shrink: 0 !important;
+    flex-grow: 0 !important;
+    position: sticky !important;
+    bottom: 0 !important;
+    background: #fff !important;
+    z-index: 100 !important;
+    width: 100% !important;
+    border-top: 2px solid #E1EBF6 !important;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.05) !important;
+    height: auto !important;
+    min-height: 60px !important;
+    display: flex !important;
+}
+
+/* Entries Per Page Selector - Works with Flexbox Layout */
+.dataTables_length,
+.dataTables_wrapper .dataTables_length,
+#permissions-table_wrapper .dataTables_length,
+#users-table_wrapper .dataTables_length {
+    float: none !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    visibility: visible !important;
+}
+
+.dataTables_length label,
+.dataTables_wrapper .dataTables_length label,
+#permissions-table_wrapper .dataTables_length label {
+    font-weight: normal;
+    font-size: 13px;
+    color: #333;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin: 0 !important;
+    white-space: nowrap;
+}
+
+.dataTables_length select,
+.dataTables_wrapper .dataTables_length select {
+    padding: 4px 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 13px;
+    margin: 0 5px;
+    cursor: pointer;
+    min-width: 60px;
+    display: inline-block !important;
+}
+
+.dataTables_length select:focus {
+    outline: none;
+    border-color: #337ab7;
+}
+
+/* DataTables Bottom Row */
+.dataTables_wrapper .dataTables_info {
+    float: left;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #666;
+    line-height: 32px;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+    float: right;
+    padding: 10px 0;
+    text-align: right;
+}
+
+/* DataTables Top Row (Length + Filter) - Global Styling */
+.dataTables_wrapper .top,
+div.dataTables_wrapper .top,
+.top,
+#permissions-table_wrapper .top,
+#users-table_wrapper .top,
+div#permissions-table_wrapper .top,
+div#users-table_wrapper .top,
+table + div .top {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 20px 40px !important;
+    width: 100% !important;
+    gap: 40px !important;
+    visibility: visible !important;
+    flex-wrap: nowrap !important;
+    flex-shrink: 0 !important;
+    background: #fff !important;
+}
+
+.dataTables_wrapper .top::after {
+    content: none !important;
+    display: none !important;
+}
+
+/* DataTables Search Box - Global Styling */
+.dataTables_wrapper .top .dt-search,
+.dataTables_wrapper .top .dataTables_filter,
+#permissions-table_wrapper .top .dt-search,
+#permissions-table_wrapper .top .dataTables_filter,
+#users-table_wrapper .top .dataTables_filter,
+div#permissions-table_wrapper .top .dt-search,
+div#permissions-table_wrapper .top .dataTables_filter {
+    display: flex !important;
+    /* padding: 20px !important; */
+    gap: 15px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    float: none !important;
+    margin: 0 !important;
+}
+
+/* Bottom section - FORCE VISIBLE with maximum specificity */
+.dataTables_wrapper .bottom,
+div.dataTables_wrapper .bottom,
+.dataTables_wrapper .row:last-child,
+div#permissions-table_wrapper .bottom,
+div[id$="_wrapper"] .bottom,
+.dataTables_wrapper > div:last-child,
+.dataTables_wrapper > .row:last-of-type {
+    padding: 15px 40px !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    min-height: 60px !important;
+    max-height: none !important;
+    flex-shrink: 0 !important;
+}
+
+/* Force pagination and info to be visible with specificity */
+.dataTables_wrapper .bottom .dataTables_info,
+.dataTables_wrapper .bottom .dt-info,
+div#permissions-table_wrapper .bottom .dataTables_info,
+div[id$="_wrapper"] .bottom .dataTables_info {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    float: left !important;
+}
+
+.dataTables_wrapper .bottom .dataTables_paginate,
+.dataTables_wrapper .bottom .dt-paging,
+div#permissions-table_wrapper .bottom .dataTables_paginate,
+div[id$="_wrapper"] .bottom .dataTables_paginate {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    float: right !important;
+}
+
+/* Search/Filter Box - Works with Flexbox Layout */
+.dataTables_filter,
+.dataTables_wrapper .dataTables_filter,
+.dt-search,
+.dataTables_wrapper .dt-search,
+#permissions-table_wrapper .dataTables_filter,
+#users-table_wrapper .dataTables_filter {
+    float: none !important;
+    margin: 0 !important;
+    position: relative;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.dataTables_filter label,
+.dataTables_wrapper .dataTables_filter label,
+.dt-search label,
+.dataTables_wrapper .dt-search label,
+#permissions-table_wrapper .dataTables_filter label {
+    font-weight: normal;
+    font-size: 13px;
+    color: #333;
+    display: block !important;
+    margin: 0 !important;
+    white-space: nowrap;
+    position: relative;
+    width: auto;
+}
+
+/* Remove any before icons */
+.dataTables_filter:before,
+.dataTables_wrapper .dataTables_filter:before,
+.dt-search:before,
+.dataTables_wrapper .dt-search:before,
+.dataTables_filter label:before,
+.dt-search label:before {
+    content: none !important;
+    display: none !important;
+}
+
+/* Search Icon - Position Inside Input on RIGHT side - ONLY on label */
+.dataTables_filter label:after,
+.dataTables_wrapper .dataTables_filter label:after,
+.dt-search label:after,
+.dataTables_wrapper .dt-search label:after {
+    content: "";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2c5077;
+    font-size: 14px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.dataTables_filter input,
+.dataTables_wrapper .dataTables_filter input,
+.dt-search input,
+.dataTables_wrapper .dt-search input {
+    border: 1px solid #74A3D5 !important;
+    padding: 6px 35px 6px 12px !important;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-left: 0;
+    width: 300px;
+    min-width: 250px;
+    background: #fff;
+    color: #333;
+    text-align: left;
+}
+
+.dataTables_filter input::placeholder,
+.dt-search input::placeholder {
+    color: #999;
+    font-size: 13px;
+}
+
+.dataTables_filter input:focus,
+.dt-search input:focus {
+    outline: none;
+    border-color: #74A3D5 !important;
+    box-shadow: 0 0 0 2px rgba(116, 163, 213, 0.1);
+}
+
+/* ===================================================
+   TABLE HEADER & STRIPED TABLE CSS FROM STAGING
+   =================================================== */
+
+/* Table Header Box */
+.table-header-box .box-title {
+    text-transform: capitalize;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    font-size: 18px;
+}
+
+.table-header-box .box-title > .fa {
+    font-size: 28px;
+    vertical-align: middle;
+    color: #1b84e7;
+}
+
+.table-header-box-inner-button {
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 10px;
+}
+
+.table-header-box-inner-button .box-title {
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+    font-size: 20px;
+    position: relative;
+    float: left;
+}
+
+.table-header-box-inner-button .box-title > .fa {
+    font-size: 28px;
+    vertical-align: middle;
+}
+
+.table-header-box-inner-button .head-btn {
+    float: right;
+    border-radius: 0px;
+    margin-left: 10px;
+}
+
+.table-header-form {
+    padding: 0 0 10px 0;
+}
+
+.table-header-form select {
+    width: 100% !important;
+}
+
+.table-header-form select.assign-status {
+    width: 100% !important;
+}
+
+.form-group.assign-group {
+    display: block;
+}
+
+.table-header-form .btn {
+    border-radius: 0;
+}
+
+.table-header-box-inner-button .box-title {
+    display: none;
+}
+
+.dashbord-table-box .text-right .btn-flat {
+    background-color: #ffffff;
+    border-color: #1ab494;
+    color: #1c84e7;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Lexend Deca Regular';
+    margin-right: 15px;
+}
+
+.tabpane-table-body .table-header-box-inner-button .box-title {
+    display: block;
+}
+
+.table-header-box-inner-button h4.modal-title {
+    margin-bottom: 20px;
+}
+
+/* Table Striped CSS - General Table Styling */
+.table {
+    font-size: 13.5px;
+}
+
+.table > thead > tr > th,
+.table > tbody > tr > th,
+.table > tfoot > tr > th,
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+    vertical-align: middle;
+    padding: 10px 15px;
+    border-left: 1px solid #E1EBF6;
+    font-size: 12px;
+    font-family: 'Lexend Deca Light';
+    color: #000;
+}
+
+.table > thead > tr > th {
+    font-size: 13px;
+    background: #d4e7fd;
+    font-family: 'Lexend Deca Light';
+    border: 1px solid #C5E1FF !important;
+    border-right: 0px !important;
+    color: #1D2433 !important;
+    font-weight: 500;
+}
+
+.dt-buttons {
+    display: none;
+    position: relative;
+    float: left;
+}
+
+.dt-button {
+    padding: 6px 10px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.dt-button:hover,
+.dt-button:focus {
+    opacity: 0.99;
+}
+
+.btn:active:focus,
+.btn:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+div.dataTables_wrapper div.dataTables_info {
+    position: relative;
+    float: left;
+    font-size: 12px;
+    padding: 11px 13px 5px 13px;
+}
+
+div.dataTables_paginate {
+    border-top: 0;
+    padding: 1px 0 0 1px !important;
+    float: left;
+    font-size: 12px;
+}
+
+.td-link,
+table tr td a {
+    cursor: pointer;
+}
+
+.table > thead > tr > th:first-child {
+    width: 40px !important;
+}
+
+table#allclientTable tr td.blue-link a {
+    color: #1a85e7 !important;
+}
+
+table#allclientTable tr td .fa {
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 12px;
+    color: #1a85e7;
+}
+
+table#allrecycletable tr td .fa {
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 12px;
+    color: #1a85e7;
+}
+
+table#allclientTable tr td .clk2calls {
+    font-size: 0;
+    padding: 0;
+    height: 25px;
+    width: 25px;
+    background: url(/images/new-sprit.png) #0000;
+    display: inline-block;
+    background-position: -221px -117px;
+    border: 0;
+}
+
+table#allclientTable tr td span .fa {
+    color: #ccc;
+    display: none;
+    padding: 5px;
+    margin: 0;
+    font-size: 15px;
+    position: relative;
+    top: 0;
+    float: right;
+}
+
+table#allclientTable tr td:hover span .fa {
+    display: inline-block;
+}
+
+table#allclientTable tr td .send_sms_icon .clk2calls {
+    min-width: auto;
+}
+
+table#prop_pulse_traders tr td.blue-link a {
+    color: #1a85e7 !important;
+}
+
+table#prop_pulse_traders tr td .fa {
+    font-weight: bold;
+    font-size: 15px;
+    margin-right: 12px;
+    color: #1a85e7;
+}
+
+table#prop_pulse_traders tr td .clk2calls {
+    font-size: 0;
+    padding: 0;
+    height: 25px;
+    width: 25px;
+    background: url(/images/new-sprit.png) #0000;
+    display: inline-block;
+    background-position: -221px -117px;
+    border: 0;
+}
+
+table#prop_pulse_traders tr td span .fa {
+    color: #ccc;
+    display: none;
+    padding: 5px;
+    margin: 0;
+    font-size: 15px;
+    position: relative;
+    top: 0;
+    float: right;
+}
+
+table#prop_pulse_traders tr td:hover span .fa {
+    display: inline-block;
+}
+
+table#prop_pulse_traders tr td .send_sms_icon .clk2calls {
+    min-width: auto;
+}
+
+/* Send SMS Icon Styling */
+.send_sms_btn .img-responsive {
+    height: 25px;
+}
+
+.send_sms_icon {
+    display: flex;
+    width: 180px;
+    gap: 7px;
+    align-items: center;
+}
+
+.listingpg .send_sms_icon {
+    width: auto;
+}
+
+table.org-table.dataTable.nowrap td:last-child a {
+    position: relative;
+    padding: 0 15px;
+    display: inline-block;
+}
+
+table.org-table.dataTable.nowrap td:last-child a:first-child {
+    padding-left: 0;
+}
+
+table.org-table.dataTable.nowrap td:last-child a:last-child:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -7px;
+    bottom: -6px;
+    background: transparent;
+    width: 1px;
+}
+
+table.org-table.dataTable.nowrap td a:before {
+    content: "";
+    position: absolute;
+    left: auto;
+    right: 0;
+    top: 0px;
+    bottom: -6px;
+    background: #ccc;
+    width: 1px;
+    height: 15px;
+}
+
+table.org-table.dataTable.nowrap td a:last-child::before {
+    display: none;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+    background-color: white !important;
+}
+
+/* ===================================================
+   SEARCH INPUT GROUP STYLING
+   =================================================== */
+
+.nav-bottom .input-group {
+    border: 1px solid #74A3D5;
+    padding: 3px 12px 3px 5px;
+    border-radius: 4px;
+    background: #fff;
+    width: 250px;
+    margin-right: 15px;
+    float: right;
+}
+
+.nav-bottom .input-group input.form-control {
+    border: transparent;
+    font-size: 12px;
+    background: transparent;
+    height: 25px;
+    padding-left: 8px;
+    color: #003B7A;
+    font-family: "lexend deca Regular";
+}
+
+.nav-bottom .input-group input.form-control::placeholder {
+    color: #003B7A;
+    font-family: "lexend deca Regular";
+}
+
+.page-title-header .nav-bottom .input-group input.form-control {
+    height: 24px;
+}
+
+.nav-bottom .input-group button.btn.btn-default {
+    background: transparent;
+    color: #2F80CB;
+    padding: 0;
+    border: 0;
+    font-size: 15px;
+    height: auto;
+    min-width: auto;
+}
+
+.navbar .nav-bottom .input-group button.btn.btn-default {
+    height: 17px;
+}
+
+.nav-bottom .input-group button.btn.btn-default:hover,
+.nav-bottom .input-group button.btn.btn-default:focus {
+    background: transparent !important;
+    color: #797979 !important;
+    outline: none;
+    box-shadow: none;
+}
+
+.nav-bottom.comn-srch {
+    padding: 0;
+    position: relative;
+}
+
+.nav-bottom.comn-srch .input-group {
+    padding: 1px 12px 0px 4px;
+    width: 170px;
+    margin-right: 0;
+}
+
+.nav-bottom.comn-srch .input-group button.btn.btn-default {
+    font-size: 13px;
+    margin-top: 1px;
+}
+
+.nav-bottom .nav .dropdown li.dropdown.open {
+    padding: 0;
+}
+
+/* ===================================================
+   PAGE TITLE HEADER & ACTION BUTTONS
+   =================================================== */
+
+/* Page Title Header */
+.page-title-header {
+    padding: 12px 20px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 15px;
+    border-radius: 4px 4px 0 0;
+}
+
+.page-title-header.clearfix {
+    overflow: hidden;
+}
+
+.page-title-header .btn-default {
+    margin-bottom: 2px;
+    border-color: #ffffff;
+    border: transparent;
+    background: #2d82c3;
+    color: #fff;
+}
+
+/* Border Div Wrap */
+.border-div-wrap {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.border-div-wrap .border {
+    border: 1px solid #ddd;
+}
+
+.border-b-0 {
+    border-bottom: 0 !important;
+}
+
+/* Reset Filter Area */
+.resetfilter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.resetfilter .button-wrap .dropdown .btn-default {
+    margin-bottom: 2px;
+}
+
+/* Button Wrap */
+.button-wrap {
+    display: inline-block;
+}
+
+.button-wrap .dropdown {
+    position: relative;
+}
+
+.button-wrap .dropdown .plus-button {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #2d82c3;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    top: 0;
+}
+
+.button-wrap .dropdown .plus-button i {
+    font-size: 16px;
+}
+
+.button-wrap .dropdown:hover > .plus-button {
+    background: #1b6aa3;
+}
+
+.button-wrap .dropdown:hover > .plus-button i {
+    color: #ffffff !important;
+}
+
+/* ===================================================
+   SEARCH & FILTER CONTROLS
+   =================================================== */
+
+/* Common Search */
+.comn-srch {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.comn-srch .input-group {
+    width: 250px;
+}
+
+.comn-srch .form-control {
+    border-radius: 3px 0 0 3px;
+    color: #000;
+}
+
+.comn-srch .form-control::placeholder {
+    color: #999;
+}
+
+.comn-srch .input-group-btn .btn {
+    border-radius: 0 3px 3px 0;
+    background: #f4f4f4;
+    border: 1px solid #d2d6de;
+    border-left: 0;
+}
+
+.comn-srch .input-group-btn .btn:hover {
+    background: #e7e7e7;
+}
+
+/* Nav Bottom (used in header areas) */
+.nav-bottom {
+    display: inline-block;
+}
+
+/* Search Box Lead Search */
+.search-box.lead-search .form-control {
+    color: #000;
+}
+
+.search-box.lead-search .form-control::placeholder {
+    color: #fff;
+}
+
+/* Funding Request Search */
+.funding_request_search_input {
+    color: #000 !important;
+}
+
+.funding_request_search_input::placeholder {
+    color: #181717d9 !important;
+}
+
+/* ===================================================
+   LIST VIEW CONTROLS & CHECKBOXES
+   =================================================== */
+
+/* List View Control */
+.list-view-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#checked-opt-opearation {
+    display: none;
+    align-items: center;
+    gap: 10px;
+}
+
+#checked-opt-opearation li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.selectedcheckbox {
+    font-weight: 600;
+    color: #515151d1;
+    font-family: 'Lexend Deca Regular', sans-serif;
+}
+
+/* Checkbox Right Align */
+.checkbox-right-ar {
+    text-align: right;
+}
+
+/* ===================================================
+   BUTTONS & ACTIONS
+   =================================================== */
+
+/* Btn Submit */
+.btn-submit {
+    background: #0076F5;
+    color: #fff;
+    border: none;
+    padding: 8px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn-submit:hover {
+    background: #0058B8;
+    color: #fff;
+}
+
+/* Auto Border Button */
+.auto-border-btn {
+    background: #fff;
+    color: #0058B8;
+    border: 1px solid #0058B8;
+    padding: 8px 20px;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.auto-border-btn:hover {
+    background: #0058B8;
+    color: #fff;
+}
+
+/* Funding Table Buttons */
+.funding_table_buttons {
+    float: right !important;
+    margin-left: 5px !important;
+}
+
+/* ===================================================
+   UTILITY CLASSES
+   =================================================== */
+
+/* Display Flex */
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}
+
+/* Padding Classes */
+.p-5 {
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pb-10 {
+    padding-bottom: 10px;
+}
+
+.pb-15 {
+    padding-bottom: 15px;
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+.padding-15 {
+    padding: 15px;
+}
+
+/* Margin Classes */
+.m-0 {
+    margin: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.ml-3 {
+    margin-left: 3px;
+}
+
+.ml-5 {
+    margin-left: 5px;
+}
+
+.ml-15 {
+    margin-left: 15px;
+}
+
+.mr-5 {
+    margin-right: 5px;
+}
+
+.mr-15 {
+    margin-right: 15px;
+}
+
+/* No Padding */
+.no-padding {
+    padding: 0 !important;
+}
+
+/* Text Alignment */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+/* Text Colors */
+.text-red {
+    color: #dd4b39;
+}
+
+.text-success {
+    color: #00a65a;
+}
+
+.text-danger {
+    color: #dd4b39;
+}
+
+/* ===================================================
+   MODAL CUSTOMIZATION (COMMON NEW POPUP)
+   =================================================== */
+
+.common-new-popup .modal-dialog {
+    margin: 30px auto;
+}
+
+.common-new-popup .modal-dialog.lg-modal {
+    width: 900px;
+    max-width: 90%;
+}
+
+.common-new-popup .modal-dialog.sm-modal {
+    width: 400px;
+    max-width: 90%;
+}
+
+.common-new-popup .modal-dialog.d-inline {
+    display: inline-block;
+}
+
+.common-new-popup .modal-header {
+    background-color: #3c8dbc;
+    color: #fff;
+    padding: 15px;
+}
+
+.common-new-popup .modal-header .close {
+    color: #fff;
+    opacity: 1;
+    font-size: 28px;
+}
+
+.common-new-popup .modal-title {
+    font-family: 'Lexend Deca Regular', sans-serif;
+    font-weight: 600;
+}
+
+.modal-hht {
+    /* Additional modal styling */
+}
+
+.text-centr {
+    /* Text center variation */
+}
+
+/* ===================================================
+   VOIP MANAGEMENT & STATUS DROPDOWN
+   =================================================== */
+
+.voipmanagment-status-dropdwn {
+    position: relative;
+    display: inline-block;
+}
+
+.voipmanagment-status-dropdwn p {
+    margin: 0;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.voipmanagment-status-dropdwn select {
+    display: none;
+}
+
+.fa-color {
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.fa-color i {
+    cursor: pointer;
+    font-size: 14px;
+}
+
+/* ===================================================
+   FORM PROCESS GIF (LOADING SPINNER)
+   =================================================== */
+
+.formprocessgif {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.formprocessgif i {
+    color: #3c8dbc;
+}
+
+/* ===================================================
+   HIDE FLUX SIDEBAR & OLD MENU (Using custom left-navigation instead)
+   =================================================== */
+
+/* Hide Flux sidebar globally since we're using custom left-navigation */
+[data-flux-sidebar],
+[grid-area="sidebar"] {
+    display: none !important;
+}
+
+/* Hide ONLY the old Livewire menu component (not the new left-navigation) */
+.old-livewire-menu {
+    display: none !important;
+}
+
+/* ===================================================
+   USER MANAGEMENT PAGE FIXES
+   =================================================== */
+
+/* Hide duplicate titles on Livewire pages (header already shows the title) */
+.flex-1.p-8 > .flex.justify-between.items-center.mb-1 > h3,
+.flex-1.p-8.bg-gray-50 > .flex.justify-between.items-center.mb-1 > h3 {
+    display: none !important;
+}
+
+/* Adjust top spacing after hiding duplicate title */
+.flex-1.p-8 > .flex.justify-between.items-center.mb-1,
+.flex-1.p-8.bg-gray-50 > .flex.justify-between.items-center.mb-1 {
+    margin-bottom: 0 !important;
+    justify-content: flex-end !important;
+}
+
+/* ===================================================
+   RESPONSIVE ADJUSTMENTS
+   =================================================== */
+
+@media (max-width: 991px) {
+    .fund-top li a {
+        width: auto;
+        min-width: 120px;
+        font-size: 13px;
+        padding: 8px 12px;
+    }
+    
+    .resetfilter {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    
+    .comn-srch .input-group {
+        width: 200px;
+    }
+}
+
+@media (max-width: 767px) {
+    .fund-top li a {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+    
+    .table-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .table-footer-left {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .resetfilter {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .page-title-header {
+        padding: 10px;
+    }
+}
+

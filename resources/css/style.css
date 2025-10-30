@@ -1,0 +1,568 @@
+@charset "utf-8";
+@font-face {
+    font-family: "LexendDeca-Regular";
+    src: url("../fonts/LexendDeca/LexendDeca-Regular.eot");
+    src: url("../fonts/LexendDeca/LexendDeca-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/LexendDeca/LexendDeca-Regular.woff2") format("woff2"), url("../fonts/LexendDeca/LexendDeca-Regular.woff") format("woff"), url("../fonts/LexendDeca/LexendDeca-Regular.ttf") format("truetype"), url("../fonts/LexendDeca/LexendDeca-Regular.svg#youworkforthem") format("svg");
+}
+@font-face {
+    font-family: "LexendDeca-SemiBold";
+    src: url("../fonts/LexendDeca/LexendDeca-SemiBold.eot");
+    src: url("../fonts/LexendDeca/LexendDeca-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/LexendDeca/LexendDeca-SemiBold.woff2") format("woff2"), url("../fonts/LexendDeca/LexendDeca-SemiBold.woff") format("woff"), url("../fonts/LexendDeca/LexendDeca-SemiBold.ttf") format("truetype"), url("../fonts/LexendDeca/LexendDeca-SemiBold.svg#youworkforthem") format("svg");
+}
+@font-face {
+    font-family: "LexendDeca-Bold";
+    src: url("../fonts/LexendDeca/LexendDeca-Bold.eot");
+    src: url("../fonts/LexendDeca/LexendDeca-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/LexendDeca/LexendDeca-Bold.woff2") format("woff2"), url("../fonts/LexendDeca/LexendDeca-Bold.woff") format("woff"), url("../fonts/LexendDeca/LexendDeca-Bold.ttf") format("truetype"), url("../fonts/LexendDeca/LexendDeca-Bold.svg#youworkforthem") format("svg");
+}
+/* COMMON CSS STARTS */
+/* Common CSS Starts */
+/* Common CSS Ends */
+/* Rightsidebar CSS Starts */
+/* Rightsidebar CSS Ends */
+/* Bootstrap CSS Overwrite Starts */
+/* Bootstrap CSS Overwrite Ends */
+/* .crm-main-wrapper .crm-main-container .crm-nav-wrapper .crm-nav-container .crm-nav-left ul li:hover ul{
+    display: none;
+  } */
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    &::before {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    &::after {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+&:root {
+    --base-container-max-width: 1720px;
+    --base-padding: 40px;
+    --base-primary-800: #003B7A;
+    --base-primary-900: #001D3D;
+    --base-primary-600: #009493;
+    --base-neutral_700: #74A3D5;
+    --base-text-color-white: #ffffff;
+    --base-bg-color: #ffffff;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: "LexendDeca-Regular";
+    background-color: var(--base-bg-color);
+    color: var(--base-text-color);
+}
+a {
+    outline: none;
+    text-decoration: none;
+}
+button {
+    outline: none;
+    text-decoration: none;
+}
+select {
+    outline: none;
+    text-decoration: none;
+}
+input {
+    outline: none;
+    text-decoration: none;
+}
+textarea {
+    outline: none;
+    text-decoration: none;
+}
+&::-ms-input-placeholder {
+    color: var(--base-primary-800);
+}
+&::placeholder {
+    color: var(--base-primary-800);
+}
+.text-blue {
+    color: var(--base-primary-800);
+}
+.text-neutral-color {
+    color: var(--base-neutral_700);
+}
+.crm-login-bg {
+    background-color: #EBF3F8;
+}
+.crm-login-wrapper {
+    padding: 0 80px;
+}
+.crm-login-title {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bolder;
+    color: #666;
+    padding-bottom: 10px;
+}
+.crm-input {
+    border: 1px solid var(--base-neutral_700) !important;
+    border-radius: 4px !important;
+    padding: 8px 16px !important;
+    min-width: 250px !important;
+}
+.crm-gray-btn {
+    background-color: #797979 !important;
+    border-color: #bcbaba !important;
+    border: 1px solid transparent;
+    background-color: #272828;
+    color: var(--base-text-color-white);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: "LexendDeca-SemiBold";
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+}
+.crm-blue-btn {
+    background-color: #018CCD !important;
+    border-color: #018CCD !important;
+    border: 1px solid transparent;
+    background-color: #2F80CB;
+    color: var(--base-text-color-white);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: "LexendDeca-SemiBold";
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+}
+.crm-green-btn {
+    border: 1px solid transparent;
+    background-color: var(--base-primary-600);
+    color: var(--base-text-color-white);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: "LexendDeca-SemiBold";
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+}
+.crm-border-btn {
+    border: 1px solid var(--base-neutral_700);
+    background-color: #ffffff;
+    color: var(--base-primary-900);
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-family: "LexendDeca-SemiBold";
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+}
+.crm-main-wrapper {
+    .crm-main-container {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+        .crm-header {
+            padding: 16px var(--base-padding);
+            background-color: var(--base-primary-800);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .crm-header-left {
+                display: flex;
+                .crm-header-hamburger {
+                    display: none;
+                    svg {
+                        width: 30px;
+                        height: auto;
+                    }
+                }
+                .crm-header-logo {
+                    width: 111px;
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: contain;
+                    }
+                }
+            }
+            .crm-header-right {
+                .crm-header-right-action-icons {
+                    display: flex;
+                    align-items: center;
+                    gap: 24px;
+                    a {
+                        display: flex;
+                        position: relative;
+                        span.crm-notification-count {
+                            min-width: 16px;
+                            min-height: 16px;
+                            max-height: 16px;
+                            border-radius: 20px;
+                            background-color: #ACFFFE;
+                            font-family: "LexendDeca-SemiBold";
+                            font-size: 14px;
+                            line-height: 25px;
+                            color: var(--base-primary-800);
+                            position: absolute;
+                            top: -10px;
+                            right: -6px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+                    a.crm-logged-user-icon {
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+        .crm-nav-wrapper {
+            padding: 0 var(--base-padding);
+            box-shadow: 0px 4px 4px 0px #00000040;
+            .crm-nav-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 20px;
+                .crm-nav-left {
+                    ul {
+                        margin: 0;
+                        padding: 0;
+                        list-style: none;
+                        display: flex;
+                        align-items: center;
+                        flex-wrap: wrap;
+                        column-gap: 20px;
+                        row-gap: 10px;
+                        li {
+                            position: relative;
+                            padding: 22px 0;
+                            a {
+                                display: flex;
+                                font-family: "LexendDeca-Regular";
+                                font-size: 13px;
+                                line-height: 20px;
+                                color: var(--base-primary-900);
+                                text-transform: uppercase;
+                                align-items: center;
+                                gap: 6px;
+                            }
+                            a.active {
+                                font-family: "LexendDeca-SemiBold";
+                            }
+                            ul {
+                                display: none;
+                                background-color: var(--base-bg-color);
+                                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
+                                transition: top 0.5s ease-in-out;
+                                position: relative;
+                                top: 10px;
+                                li {
+                                    padding: 8px 16px;
+                                    cursor: pointer;
+                                    &:hover {
+                                        background-color: var(--base-neutral_700);
+                                        color: var(--base-text-color-white);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .crm-nav-right {
+                    .crm-nav-search-block {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: end;
+                        input {
+                            padding-right: 35px !important;
+                        }
+                        span {
+                            position: absolute;
+                            right: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .crm-breadcrumb {
+            padding: 16px var(--base-padding);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 15px;
+            .crm-breadcrumb-left {
+                .crm-breadcrumb-module-name {
+                    font-family: "LexendDeca-Bold";
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: var(--base-primary-900);
+                    margin-bottom: 8px;
+                }
+                .crm-breadcrumb-path {
+                    a {
+                        font-family: "LexendDeca-Regular";
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: var(--base-primary-900);
+                    }
+                    span {
+                        font-family: "LexendDeca-Regular";
+                        font-size: 14px;
+                        line-height: 17px;
+                        color: var(--base-primary-900);
+                        margin-top: 2px;
+                    }
+                }
+            }
+            .crm-breadcrumb-right {
+                .crm-breadcrumb-action-btns {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    flex-wrap: wrap;
+                    row-gap: 10px;
+                }
+            }
+        }
+        .crm-middle-content-wrapper {
+            flex: 1 1 auto;
+            overflow-y: auto;
+            overflow-x: hidden;
+            .crm-middle-content-container {
+                padding: 16px var(--base-padding);
+            }
+        }
+    }
+}
+.crm-breadcrumb-path {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.crm-rightsidebar-wrapper {
+    position: fixed;
+    top: 65px;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    max-width: 670px;
+    transition: right 0.5s ease-in-out;
+    background-color: var(--base-bg-color);
+    box-shadow: 0px 4px 4px 0px #00000040;
+    z-index: 3;
+    overflow: scroll;
+    .crm-rightsidebar-container {
+        .crm-rightsidebar-header {
+            padding: 12px 20px;
+            background-color: #CAE7F9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .crm-rightsidebar-header-left {
+                .crm-rightsidebar-header-title {
+                    font-family: "LexendDeca-Regular";
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-align: left;
+                    color: #14416C;
+                }
+                .crm-rightsidebar-header-text {
+                    font-family: "LexendDeca-Regular";
+                    font-size: 12px;
+                    font-weight: 400;
+                    line-height: 20px;
+                    text-align: left;
+                    color: #14416C;
+                }
+            }
+            .crm-rightsidebar-header-right {
+                .crm-rightsidebar-header-close-btn {
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 50%;
+                    background-color: var(--base-bg-color);
+                    border: 1px solid #1B84E7;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    svg {
+                        width: 20px;
+                        height: auto;
+                    }
+                }
+            }
+        }
+        .crm-rightsidebar-body {
+            padding: 20px;
+            padding-top: 10px;
+        }
+        .crm-rightsidebar-footer {
+            padding: 20px;
+        }
+    }
+}
+.crm-rightsidebar-wrapper.crm-show-rightsidebar {
+    right: 0;
+}
+ul.dropdown-menu {
+    box-shadow: 0px 4px 4px 0px #00000040;
+}
+.carousel-caption {
+    bottom: auto;
+    top: 5%;
+    left: 5%;
+    font-family: LexendDeca-SemiBold;
+    h2 {
+        font-size: 36px;
+        color: #3a3a3a;
+        text-shadow: none;
+        font-weight: 400;
+        text-align: left;
+        width: 501px;
+    }
+    h4 {
+        font-size: 20px;
+        color: #3a3a3a;
+        text-shadow: none;
+        font-weight: 400;
+        text-align: left;
+        width: 501px;
+    }
+}
+.carousel-indicators {
+    bottom: -30px;
+    [data-bs-target] {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        margin-right: 4px;
+        margin-left: 4px;
+        border: 1px solid #FFF;
+        background-color: #DDDDDD;
+        margin-top: 20px;
+    }
+    .active {
+        background-color: #00BFD6;
+        border-color: #00BFD6;
+    }
+}
+.add-user-btn {
+    border: 1px solid var(--base-neutral_700);
+    border-radius: 4px;
+    padding: 5px !important;
+    margin-left: 5px;
+}
+.iti__country-container {
+    height: 42px !important;
+}
+.change-status {
+    background-color: #C9E7F9;
+    border-radius: 50%;
+    padding: 5px;
+    margin-left: 6px;
+    color: #0076F5;
+}
+@media (min-width: 1151px) {
+    .crm-main-wrapper {
+        .crm-main-container {
+            .crm-nav-wrapper {
+                .crm-nav-container {
+                    .crm-nav-left {
+                        ul {
+                            li {
+                                &:hover {
+                                    ul {
+                                        display: block;
+                                        width: 200px;
+                                        left: 0;
+                                        top: 65px;
+                                        position: absolute;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1150px) {
+    .crm-main-wrapper {
+        .crm-main-container {
+            .crm-header {
+                .crm-header-left {
+                    .crm-header-hamburger {
+                        display: flex;
+                    }
+                    gap: 20px;
+                }
+            }
+            .crm-nav-wrapper {
+                position: fixed;
+                width: 100%;
+                max-width: 300px;
+                height: calc(100% - 65px);
+                padding: 0 20px;
+                background-color: var(--base-bg-color);
+                top: 65px;
+                left: -300px;
+                transition: left 0.5s ease-in-out;
+                .crm-nav-container {
+                    .crm-nav-left {
+                        ul {
+                            li {
+                                padding: 10px 0;
+                                width: 100%;
+                                a {
+                                    display: flex;
+                                    justify-content: space-between;
+                                }
+                            }
+                            flex-direction: column;
+                            li.crm-menu-open {
+                                ul {
+                                    display: block;
+                                    box-shadow: none;
+                                    li {
+                                        &:hover {
+                                            background-color: transparent;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        width: 100%;
+                    }
+                    flex-direction: column-reverse;
+                    align-items: flex-start;
+                    margin-top: 20px;
+                    .crm-nav-right {
+                        position: sticky;
+                        top: 20px;
+                    }
+                }
+            }
+            .crm-nav-wrapper.crm-open-nav-menu {
+                left: 0;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    &:root {
+        --base-padding: 20px;
+    }
+    .crm-main-wrapper {
+        .crm-main-container {
+            .crm-nav-wrapper {
+                .crm-nav-container {
+                    flex-wrap: wrap;
+                }
+            }
+        }
+    }
+}

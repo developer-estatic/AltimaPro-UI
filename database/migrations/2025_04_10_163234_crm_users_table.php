@@ -1,0 +1,174 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    public function up(): void
+    {
+        Schema::create('crm_users', function (Blueprint $table) {
+            $table->id();
+            $table->string('business_unit', 50)->nullable();
+            $table->string('birth_date')->nullable();
+            $table->string('country', 10)->nullable();
+            $table->string('phone_country_code', 10)->nullable();
+            $table->string('phone', 20)->nullable();
+            $table->uuid('account_id')->unique();
+            $table->string('firstname', 100)->nullable();
+            $table->string('lastname', 100)->nullable();
+            $table->string('email', 191)->unique()->nullable(); // 191 to fit within InnoDB index limit
+            $table->text('address')->nullable();
+            $table->string('city', 100)->nullable();
+            $table->string('zipcode', 20)->nullable();
+            $table->string('state', 100)->nullable();
+            $table->timestamp('creation_time')->nullable();
+            $table->string('login', 50)->nullable();
+            $table->boolean('status')->default(1);
+            $table->boolean('is_ftd')->default(0);
+            $table->string('owner', 50)->nullable();
+            $table->string('tp_account_type', 50)->nullable();
+            $table->string('kyc_status', 50)->nullable();
+            $table->text('kyc_comment')->nullable();
+            $table->boolean('is_online')->default(0);
+            $table->boolean('is_affiliate')->default(0);
+            $table->string('parent_affiliate', 50)->nullable();
+            $table->timestamp('last_modified_on')->nullable();
+            $table->boolean('DocUploadedSts')->default(0);
+            $table->string('account_status', 50)->nullable();
+            $table->string('mailing_group', 50)->nullable();
+            $table->text('comment')->nullable();
+            $table->string('voipstatus', 50)->nullable();
+            $table->string('ip', 45)->nullable(); // Max length for IPv6
+            $table->string('parent_bu', 50)->nullable();
+            $table->string('org_id', 50)->nullable();
+            $table->boolean('is_converted')->default(0);
+            $table->timestamp('convertedon')->nullable();
+            $table->string('fileid', 100)->nullable();
+            $table->string('uploadstatus', 50)->nullable();
+            $table->string('leadsource', 50)->nullable();
+            $table->string('blockreason', 100)->nullable();
+            $table->text('comment_desc')->nullable();
+            $table->timestamp('LoginTime')->nullable();
+            $table->timestamp('LogoutTime')->nullable();
+            $table->string('password', 100)->nullable();
+            $table->timestamp('ftd_date')->nullable();
+            $table->string('occupation', 100)->nullable();
+            $table->string('best_time_to_contact', 100)->nullable();
+            $table->string('ownername', 100)->nullable();
+            $table->string('countryname', 100)->nullable();
+            $table->string('buname', 100)->nullable();
+            $table->string('webhookkey', 100)->nullable();
+            $table->string('Affiliate', 50)->nullable();
+            $table->string('CampaignId', 50)->nullable();
+            $table->string('LinkId', 50)->nullable();
+            $table->string('GoogleId', 50)->nullable();
+            $table->text('Referrer')->nullable();
+            $table->string('SubAffiliate', 50)->nullable();
+            $table->string('AffTransactionId', 50)->nullable();
+            $table->string('TLID', 50)->nullable();
+            $table->text('Tag')->nullable();
+            $table->text('Tag1')->nullable();
+            $table->string('IB', 50)->nullable();
+            $table->string('UtmCampaign', 100)->nullable();
+            $table->string('UtmContent', 100)->nullable();
+            $table->string('UtmCreative', 100)->nullable();
+            $table->string('UtmMedium', 100)->nullable();
+            $table->string('UtmSource', 100)->nullable();
+            $table->string('UtmTerm', 100)->nullable();
+            $table->string('WhiteLabel', 100)->nullable();
+            $table->string('Campaign', 100)->nullable();
+            $table->string('dialerlist_id', 50)->nullable();
+            $table->string('CoperatoCampaignId', 50)->nullable();
+            $table->timestamp('note_date')->nullable();
+            $table->string('phone2', 20)->nullable();
+            $table->string('source', 50)->nullable();
+            $table->string('sumofdeposit', 15)->nullable()->default(0.00);
+            $table->string('ftd_amount', 15)->nullable()->default(0.00);
+            $table->string('sumofwithdrawal', 15)->nullable()->default(0.00);
+            $table->boolean('tncaccept')->default(0);
+            $table->timestamp('tncdate')->nullable();
+            $table->boolean('EmailVerified')->default(0);
+            $table->string('commpeak', 50)->nullable();
+            $table->timestamp('emailverifydate')->nullable();
+            $table->string('brandname', 100)->nullable();
+            $table->integer('leadstatusid')->nullable();
+            $table->integer('buid')->nullable();
+            $table->integer('ownid')->nullable();
+            $table->string('sock_id', 50)->nullable();
+            $table->string('sock_user_id', 50)->nullable();
+            $table->bigInteger('insert_time_unix')->nullable();
+            $table->bigInteger('comaxaccid')->nullable();
+            $table->string('SubAffiliateName', 50)->nullable();
+            $table->string('first_assign_conversion_owner', 50)->nullable();
+            $table->timestamp('first_assign_conversion_at')->nullable();
+            $table->string('first_assign_retention_owner', 50)->nullable();
+            $table->timestamp('first_assign_retention_at')->nullable();
+            $table->string('category', 50)->nullable();
+            $table->string('secretKey_oauth', 100)->nullable();
+            $table->string('call_status', 50)->nullable();
+            $table->string('ReferrerClient', 50)->nullable();
+            $table->string('CPL', 50)->nullable();
+            $table->text('Tag2')->nullable();
+            $table->string('ClickId', 50)->nullable();
+            $table->string('EventId', 50)->nullable();
+            $table->text('AddKeywords')->nullable();
+            $table->string('old_owner', 50)->nullable();
+            $table->string('old_owner_name', 100)->nullable();
+            $table->text('delete_comment_lead')->nullable();
+            $table->string('stagstatus', 50)->nullable();
+            $table->string('titan_org_id', 50)->nullable();
+            $table->string('titan_org_name', 100)->nullable();
+            $table->string('titan_group_id', 50)->nullable();
+            $table->string('titan_group_name', 100)->nullable();
+            $table->string('titan_user_id', 50)->nullable();
+            $table->timestamp('ftd_date_aff')->nullable();
+            $table->string('ftd_amount_aff', 15)->nullable();
+            $table->string('status_aff', 50)->nullable();
+            $table->json('tp_account_data')->nullable();
+            $table->timestamp('last_call_date')->nullable();
+            $table->integer('login_account')->nullable();
+            $table->integer('call_count')->default(0);
+            $table->string('account_category', 50)->nullable();
+            $table->string('base_trading_platform', 50)->nullable();
+            $table->string('base_currency', 10)->nullable();
+            $table->string('acc_type', 50)->nullable();
+            $table->string('base_promocode', 50)->nullable();
+            $table->boolean('prop_trading_interest')->default(0);
+            $table->string('convertedby', 50)->nullable();
+            $table->string('prop_email', 191)->nullable();
+            $table->string('prop_pass', 100)->nullable();
+            $table->string('prop_client_id', 50)->nullable();
+            $table->timestamp('prop_participant_on')->nullable();
+            $table->string('prop_status', 50)->nullable();
+            $table->string('account_access_status', 50)->nullable();
+            $table->string('sumsub_kyc_status', 50)->nullable();
+            $table->string('website_name', 100)->nullable();
+            $table->string('us_citizen', 10)->default('No');
+            $table->string('mobius_email', 191)->nullable();
+            $table->boolean('is_std')->default(0);
+            $table->timestamp('std_date')->nullable();
+            $table->boolean('send_sys_email')->default(1);
+            $table->string('add_to_balance', 15)->nullable()->default(0.00);
+            $table->string('netdeposit', 15)->nullable();
+            $table->boolean('ftd_email_sent')->default(0);
+            $table->timestamp('convertedon_utc')->nullable();
+            $table->timestamp('ftd_date_utc')->nullable();
+            $table->timestamp('creation_time_utc')->nullable();
+            $table->timestamp('note_date_utc')->nullable();
+            $table->timestamp('last_modified_on_utc')->nullable();
+            $table->timestamp('last_call_date_utc')->nullable();
+            $table->boolean('lockaffstatus')->default(0);
+            $table->boolean('ftd_exist_aff')->default(0);
+            $table->boolean('email_sent')->default(0);
+
+            $table->timestamps();
+        });
+    }
+
+    public function down(): void
+    {
+        Schema::dropIfExists('crm_users');
+    }
+};
